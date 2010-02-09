@@ -1,0 +1,7 @@
+p, h1, h2, h3, h4 {font-family:"Tahoma",Tahoma,sans-serif;}
+body {
+  text-align:center;
+}
+.hidden {display: none;}
+p {position: absolute;}
+img {position: absolute;cursor: pointer;}
