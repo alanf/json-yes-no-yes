@@ -36,12 +36,18 @@ rules = {
 				'type': 'image',
 				'next': 'start',
 				'content': 'puppy.jpg',
-				'position': {'x': 855, 'y': 167}
+				'position': {'x': 998, 'y': 167}
+				},
+				{
+				'type': 'image',
+				'next': 'second',
+				'content': 'avs.jpg',
+				'position': {'x': 155, 'y': 0}
 				},
 				{
 				'type': 'text',
 				'content': 'whoa this is another thing',
-				'position': {'x': 69, 'y': 528}
+				'position': {'x': 69, 'y': 628}
 				}
 	]
 }
