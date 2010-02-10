@@ -28,17 +28,9 @@ class MainHandler(webapp.RequestHandler):
 		path = os.path.join(os.path.dirname(__file__), 'templates', 'index.html')
 		self.response.out.write(template.render(path, {}))
 
-class ResumeHandler(webapp.RequestHandler):
-
-	def get(self):
-		path = os.path.join(os.path.dirname(__file__), 'templates', 'resume.html')
-		self.response.out.write(template.render(path, {}))
-
-
 def main():
 	application = webapp.WSGIApplication([
 		('/', MainHandler),
-		('^/resume.*$', ResumeHandler),
 	], debug=False)
 	util.run_wsgi_app(application)
 

@@ -3,9 +3,8 @@ var $$ = goog.dom.$$;
 
 main_action = function(event) {
 	// delete the old stuff
-	goog.dom.removeNode(event.target);
-	goog.array.forEach($$('p'), function (p_el) {
-		goog.dom.removeNode(p_el);
+	goog.array.forEach($$('body'), function (body) {
+		goog.dom.removeChildren(body);	
 	});
 
 	var name = event.target.id.split('-')[1];
