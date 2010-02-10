@@ -7,20 +7,23 @@ main_action = function(event) {
 		goog.dom.removeChildren(body);	
 	});
 
-	var name = event.target.id.split('-')[1];
+	var name = event.target.id.split('-')[2];
 	new_rules = rules[name];
 
+	i = 0, j = 0;
 	goog.array.forEach(new_rules, function (rule) {
 		//hide this element
 		var new_element = null;
 		if (rule['type'] == 'image') {
 			// create an img element
-			new_element = goog.dom.createDom('img', {'src': 'images/'+rule['content'], 'id': 'image-'+rule['next']});
+			new_element = goog.dom.createDom('img', {'src': 'images/'+rule['content'], 'id': 'image-'+name+'-'+rule['next']+'-'+i});
 			// listen to image clicks
 			goog.events.listen(new_element, goog.events.EventType.CLICK, main_action, false, this);
+			i += 1;
 		} else if (rule['type'] == 'text') {
 			//create a p element
-			new_element = goog.dom.createDom('p', {'id': 'image-'+rule['next']}, rule['content']);
+			new_element = goog.dom.createDom('p', {'id': 'text'+'-'+name+'-'+rule['next']+'-'+j}, rule['content']);
+			j += 1;
 		}
 
 		// set the position
