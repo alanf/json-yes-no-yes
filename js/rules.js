@@ -5,7 +5,7 @@ rules = {
                 'next': 'second',
                 'content': 'start.jpg',
                 'position': {'x': '50px', 'y': '50px'},
-                'width': '100%'
+                'width': '   '
                 },
                 {
                 'type': 'image',
@@ -37,13 +37,13 @@ rules = {
                 'type': 'image',
                 'next': 'third',
                 'content': 'page2_img1.jpg',
-                'position': {'x': '10px', 'y': '30px'}
+                'position': {'x': '35px', 'y': '35px'}
                 },
                 {
                 'type': 'image',
                 'next': 'third',
                 'content': 'page2_img2.jpg',
-                'position': {'x': '65px', 'y': '85px'}
+                'position': {'x': '48%', 'y': '85px'}
                 }
 	],
     'third': [
