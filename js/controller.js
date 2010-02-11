@@ -3,7 +3,7 @@ var $$ = goog.dom.$$;
 
 main_action = function(event) {
 	// delete the old stuff
-	event.stopPropagation();
+	event.preventDefault();
 	goog.array.forEach($$('body'), function (body) {
 		goog.dom.removeChildren(body);	
 	});
@@ -24,11 +24,29 @@ main_action = function(event) {
 			i += 1;
 		} else if (rule['type'] == 'text') {
 			//create a p element
-			new_element = goog.dom.createDom('p', {'id': 'text'+'-'+name+'-'+rule['next']+'-'+j}, rule['content']);
+			new_element = goog.dom.createDom('p', {'id': 'text'+'-'+name+'-'+rule['next']+'-'+j});
+
+			// pull out the text and links
+			text = rule['content'].split(']]');
+				
+			goog.array.forEach(text, function(fragment) {
+				text_content = fragment.split('[[')[0];
+				goog.dom.appendChild(new_element, goog.dom.createTextNode(text_content));
+
+				// make a new a element and append it if there is one
+				if (fragment.split('[[').length > 1) {
+					link_content =  fragment.split('[[')[1].split('|');
+					href = link_content[0];
+					link_text  = link_content[1];
+					link_element = goog.dom.createDom('a', {'href': '', 'id': 'text-'+name+'-'+href+'-'+j}, link_text);
+					goog.dom.appendChild(new_element, link_element);
+					goog.events.listen(link_element, goog.events.EventType.CLICK, main_action, false, this);
+				}
+			});
 			j += 1;
 		}
 
-		style = '';
+		var style = '';
 		// set the position
 		if (rule['position']) {
 			style += 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
@@ -47,8 +65,7 @@ main_action = function(event) {
 	});
 
 	// DEBUGGING
-	debug_back_link = goog.dom.createDom('a', {'href': '#', 'id': 'debug-'+prev+'-'+prev});
-	goog.dom.setTextContent(debug_back_link, 'go back');
+	debug_back_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-'+prev+'-'+prev}, 'go back');
 	goog.array.forEach($$('body'), function (body) {
 		body.appendChild(debug_back_link);	
 	});

@@ -40,6 +40,11 @@ rules = {
                 'content': 'page2_img2.jpg',
                 'position': {'x': '48%', 'y': '85px'}
                 },
+                {
+                'type': 'text',
+                'content': 'text with a [[third|link]] and [[start|another link]]',
+                'position': {'x': '78%', 'y': '25px'}
+                },
 				{
                 'type': 'image',
                 'next': 'third',
