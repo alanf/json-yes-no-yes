@@ -4,7 +4,7 @@ rules = {
                 'type': 'image',
                 'next': 'second',
                 'content': 'start.jpg',
-                'position': {'x': '50px', 'y': '50px'}
+                'position': {'x': '50px', 'y': '50px'},
                 'width': '100%'
                 },
                 {
@@ -44,7 +44,8 @@ rules = {
                 'next': 'third',
                 'content': 'page2_img2.jpg',
                 'position': {'x': '65px', 'y': '85px'}
-                },
+                }
+	],
     'third': [
                 {
                 'type': 'image',
