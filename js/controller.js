@@ -10,9 +10,10 @@ main_action = function(event) {
 
 	var prev = event.target.id.split('-')[1];
 	var name = event.target.id.split('-')[2];
-	new_rules = rules[name];
+	var new_rules = rules[name];
 
-	i = 0, j = 0;
+	var i = 0;
+	var j = 0;
 	goog.array.forEach(new_rules, function (rule) {
 		//hide this element
 		var new_element = null;
@@ -27,18 +28,19 @@ main_action = function(event) {
 			new_element = goog.dom.createDom('p', {'id': 'text'+'-'+name+'-'+rule['next']+'-'+j});
 
 			// pull out the text and links
-			text = rule['content'].split(']]');
+			var text = rule['content'].split(']]');
 				
+			var k = 0;
 			goog.array.forEach(text, function(fragment) {
-				text_content = fragment.split('[[')[0];
+				var text_content = fragment.split('[[')[0];
 				goog.dom.appendChild(new_element, goog.dom.createTextNode(text_content));
 
 				// make a new a element and append it if there is one
 				if (fragment.split('[[').length > 1) {
-					link_content =  fragment.split('[[')[1].split('|');
-					href = link_content[0];
-					link_text  = link_content[1];
-					link_element = goog.dom.createDom('a', {'href': '', 'id': 'text-'+name+'-'+href+'-'+j}, link_text);
+					var link_content =  fragment.split('[[')[1].split('|');
+					var href = link_content[0];
+					var link_text  = link_content[1];
+					var link_element = goog.dom.createDom('a', {'href': '', 'id': 'text-'+name+'-'+href+'-'+j+'-'+k}, link_text);
 					goog.dom.appendChild(new_element, link_element);
 					goog.events.listen(link_element, goog.events.EventType.CLICK, main_action, false, this);
 				}
@@ -58,18 +60,22 @@ main_action = function(event) {
 			goog.dom.setProperties(new_element, {'style': style});
 		}
 
+		
 		// put the element in the page
 		goog.array.forEach($$('body'), function (body) {
 			body.appendChild(new_element);	
 		});
 	});
 
-	// DEBUGGING
-	debug_back_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-'+prev+'-'+prev}, 'go back');
-	goog.array.forEach($$('body'), function (body) {
-		body.appendChild(debug_back_link);	
+	var debug_back_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-'+prev+'-'+prev}, 'go back');
+	var start_link = goog.dom.createDom('a', {'href': '', 'id': 'home-start-start'}, 'home');
+
+	goog.array.forEach([debug_back_link, start_link], function (link) {
+		goog.array.forEach($$('body'), function (body) {
+			body.appendChild(link);	
+			goog.events.listen(link, goog.events.EventType.CLICK, main_action, false, this);
+		});
 	});
-	goog.events.listen(debug_back_link, goog.events.EventType.CLICK, main_action, false, this);
 };
 
 goog.array.forEach($$('img'), function (element) {
