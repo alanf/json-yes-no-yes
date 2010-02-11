@@ -4,7 +4,7 @@ rules = {
 				'type': 'image',
 				'next': 'second',
 				'content': 'start.jpg',
-				'position': {'x': 0, 'y': 0}
+				'position': {'x': 10, 'y': 50}
 				},
 				{
 				'type': 'image',
