@@ -3,19 +3,20 @@ rules = {
 				{
 				'type': 'image',
 				'next': 'second',
-				'content': 'portrait.jpg',
-				'position': {'x': 45, 'y': 67}
+				'content': 'start.jpg',
+				'position': {'x': 145, 'y': 160}
 				},
 				{
 				'type': 'image',
 				'next': 'third',
-				'content': 'corgi.jpg',
-				'position': {'x': 845, 'y': 67}
+				'content': 'start.jpg',
+				'position': {'x': 445, 'y': 367}
 				},
 				{
 				'type': 'text',
-				'content': 'this is some example text',
-				'position': {'x': 600, 'y': 600}
+				'next': 'third',
+				'content': 'start.jpg',
+				'position': {'x': 845, 'y': 567}
 				}
 	],
 	'second': [
