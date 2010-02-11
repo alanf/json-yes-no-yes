@@ -28,6 +28,9 @@ main_action = function(event) {
 
 		// set the position
 		style = 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
+		if (rule['width']) {
+			style += 'width: ' + rule['width'];
+		}
 		goog.dom.setProperties(new_element, {'style': style})
 
 		// put the element in the page
