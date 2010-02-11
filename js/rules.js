@@ -18,12 +18,6 @@ rules = {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',
-                'position': {'x': '185px', 'y': '425px'}
-                },
-                {
-                'type': 'image',
-                'next': 'third',
-                'content': 'dot.jpg',
                 'position': {'x': '900px', 'y': '110px'}
                 },
                 {
@@ -31,12 +25,6 @@ rules = {
                 'next': 'third',
                 'content': 'dot.jpg',
                 'position': {'x': '660px', 'y': '170px'}
-                },
-                {
-                'type': 'image',
-                'next': 'third',
-                'content': 'dot.jpg',
-                'position': {'x': '845px', 'y': '387px'}
                 }
     ],
     'second': [
@@ -51,26 +39,86 @@ rules = {
                 'next': 'third',
                 'content': 'page2_img2.jpg',
                 'position': {'x': '48%', 'y': '85px'}
+                },
+				{
+                'type': 'image',
+                'next': 'third',
+                'content': 'page2_img3.jpg',
+                'position': {'x': '280', 'y': '457px'}
                 }
 	],
     'third': [
                 {
                 'type': 'image',
-                'next': 'start',
-                'content': 'puppy.jpg',
-                'position': {'x': '998px', 'y': '167px'}
-                },
+                'next': 'fourth',
+                'content': 'page3_img1.jpg',
+                'position': {'x': '15%', 'y': '25%'}
+                }
+    ],
+	'fourth': [
                 {
                 'type': 'image',
-                'next': 'second',
-                'content': 'avs.jpg',
-                'position': {'x': '155px', 'y': '0px'}
-                },
-                {
-                'type': 'text',
-                'content': 'whoa this is another thing',
-                'position': {'x': '69px', 'y': '628px'}
+                'next': 'fifth_parking',
+                'content': 'page4_img1.jpg',
+                'position': {'x': '15%', 'y': '10%'}
                 }
-    ]
+    ],
+	'fifth_parking': [
+                {
+                'type': 'image',
+                'next': 'sixth',
+                'content': 'page5_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'sixth': [
+                {
+                'type': 'image',
+                'next': 'seventh_hybrid',
+                'content': 'page6_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'seventh_hybrid': [
+                {
+                'type': 'image',
+                'next': 'eight',
+                'content': 'page7_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'eight': [
+                {
+                'type': 'image',
+                'next': 'nine',
+                'content': 'page5_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'nine': [
+                {
+                'type': 'image',
+                'next': 'ten',
+                'content': 'page7_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'ten': [
+                {
+                'type': 'image',
+                'next': 'eleventh',
+                'content': 'page6_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'eleventh': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'page7_img1.jpg',
+                'position': {'x': '25%', 'y': '8%'}
+                }
+	]
 }
+
 
