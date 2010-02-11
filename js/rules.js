@@ -1,4 +1,11 @@
 rules = {
+	'init': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'start.jpg',
+                }
+			],
     'start': [
                 {
                 'type': 'image',

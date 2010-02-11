@@ -3,10 +3,12 @@ var $$ = goog.dom.$$;
 
 main_action = function(event) {
 	// delete the old stuff
+	event.stopPropagation();
 	goog.array.forEach($$('body'), function (body) {
 		goog.dom.removeChildren(body);	
 	});
 
+	var prev = event.target.id.split('-')[1];
 	var name = event.target.id.split('-')[2];
 	new_rules = rules[name];
 
@@ -26,18 +28,31 @@ main_action = function(event) {
 			j += 1;
 		}
 
+		style = '';
 		// set the position
-		style = 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
-		if (rule['width']) {
+		if (rule['position']) {
+			style += 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
+		}
+		if (rule['width'] && goog.string.trim(rule['width'])) {
 			style += 'width: ' + rule['width'];
 		}
-		goog.dom.setProperties(new_element, {'style': style})
+		if (style) {
+			goog.dom.setProperties(new_element, {'style': style});
+		}
 
 		// put the element in the page
 		goog.array.forEach($$('body'), function (body) {
 			body.appendChild(new_element);	
 		});
 	});
+
+	// DEBUGGING
+	debug_back_link = goog.dom.createDom('a', {'href': '#', 'id': 'debug-'+prev+'-'+prev});
+	goog.dom.setTextContent(debug_back_link, 'go back');
+	goog.array.forEach($$('body'), function (body) {
+		body.appendChild(debug_back_link);	
+	});
+	goog.events.listen(debug_back_link, goog.events.EventType.CLICK, main_action, false, this);
 };
 
 goog.array.forEach($$('img'), function (element) {
