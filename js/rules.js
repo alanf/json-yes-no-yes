@@ -10,13 +10,13 @@ rules = {
 				'type': 'image',
 				'next': 'third',
 				'content': 'start.jpg',
-				'position': {'x': 445, 'y': 367}
+				'position': {'x': 45, 'y': 267}
 				},
 				{
 				'type': 'image',
 				'next': 'third',
 				'content': 'start.jpg',
-				'position': {'x': 845, 'y': 567}
+				'position': {'x': 845, 'y': 467}
 				}
 	],
 	'second': [
