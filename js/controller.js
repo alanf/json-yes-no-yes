@@ -1,3 +1,6 @@
+// hacked out in no time flat by alan fineberg 
+// c 2010
+// www.alanfineberg.com
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
 
@@ -72,7 +75,6 @@ main_action = function(event) {
 	// These links are always present on the page
 	var debug_back_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-'+prev+'-'+prev}, 'go back');
 	var start_link = goog.dom.createDom('a', {'href': '', 'id': 'home-start-start'}, 'home');
-
 	goog.array.forEach([debug_back_link, start_link], function (link) {
 		goog.array.forEach($$('body'), function (body) {
 			body.appendChild(link);	
