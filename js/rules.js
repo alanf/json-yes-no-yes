@@ -3,32 +3,32 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'second',
-                'content': 'start.jpg',
+                'content': 'dot.jpg',
                 'position': {'x': '50px', 'y': '50px'},
                 'width': '   '
                 },
                 {
                 'type': 'image',
                 'next': 'third',
-                'content': 'start.jpg',
+                'content': 'dot.jpg',
                 'position': {'x': '185px', 'y': '425px'}
                 },
                 {
                 'type': 'image',
                 'next': 'third',
-                'content': 'start.jpg',
+                'content': 'dot.jpg',
                 'position': {'x': '900px', 'y': '110px'}
                 },
                 {
                 'type': 'image',
                 'next': 'third',
-                'content': 'start.jpg',
+                'content': 'dot.jpg',
                 'position': {'x': '660px', 'y': '170px'}
                 },
                 {
                 'type': 'image',
                 'next': 'third',
-                'content': 'start.jpg',
+                'content': 'dot.jpg',
                 'position': {'x': '845px', 'y': '387px'}
                 }
     ],
