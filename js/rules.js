@@ -43,11 +43,11 @@ rules = {
                 {
                 'type': 'text',
                 'content': 'text with a [[third|link]] and [[start|another link]]',
-                'position': {'x': '78%', 'y': '25px'}
+                'position': {'x': '58%', 'y': '25px'}
                 },
 				{
                 'type': 'image',
-                'next': 'third',
+                'next': 'twelveth',
                 'content': 'page2_img3.jpg',
                 'position': {'x': '280', 'y': '457px'}
                 }
@@ -122,6 +122,26 @@ rules = {
                 'next': 'start',
                 'content': 'page7_img1.jpg',
                 'position': {'x': '25%', 'y': '8%'}
+                }
+	],
+	'twelveth': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'page8_img1.jpg',
+                'position': {'x': '50%', 'y': '50%'}
+                },
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'page8_img2.jpg',
+                'position': {'x': '10%', 'y': '50%'}
+                },
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'page8_img3.jpg',
+                'position': {'x': '38%', 'y': '10%'}
                 }
 	]
 }
