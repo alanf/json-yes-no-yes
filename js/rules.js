@@ -21,6 +21,12 @@ rules = {
                 'position': {'x': '900px', 'y': '110px'}
                 },
                 {
+                'type': 'text',
+                'content': 'this is a large block of text lorem ipsum blah blah internet internet one two [[third|three]] is this thing on? is this [[second|thing]] on? check 2 check2.',
+				'width': '200px',
+                'position': {'x': '260px', 'y': '170px'}
+                },
+                {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',

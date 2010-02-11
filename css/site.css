@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4 {font-family:"Tahoma",Tahoma,sans-serif;text-align:center;}
+p, h1, h2, h3, h4 {font-family:"Tahoma",Tahoma,sans-serif;text-align:justify;}
 .hidden {display: none;}
 p {position: absolute;}
 img {position: absolute;cursor: pointer;}
