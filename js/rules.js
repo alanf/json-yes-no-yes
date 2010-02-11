@@ -10,13 +10,25 @@ rules = {
 				'type': 'image',
 				'next': 'third',
 				'content': 'start.jpg',
-				'position': {'x': 45, 'y': 267}
+				'position': {'x': 85, 'y': 267}
 				},
 				{
 				'type': 'image',
 				'next': 'third',
 				'content': 'start.jpg',
-				'position': {'x': 845, 'y': 467}
+				'position': {'x': 585, 'y': 180}
+				},
+				{
+				'type': 'image',
+				'next': 'third',
+				'content': 'start.jpg',
+				'position': {'x': 400, 'y': 300}
+				},
+				{
+				'type': 'image',
+				'next': 'third',
+				'content': 'start.jpg',
+				'position': {'x': 845, 'y': 387}
 				}
 	],
 	'second': [
