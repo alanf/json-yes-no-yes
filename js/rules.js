@@ -9,10 +9,9 @@ rules = {
     'start': [
                 {
                 'type': 'image',
-                'next': 'second',
+                'next': 'second_paper',
                 'content': 'dot.jpg',
                 'position': {'x': '50px', 'y': '50px'},
-                'width': '   '
                 },
                 {
                 'type': 'image',
@@ -33,31 +32,14 @@ rules = {
                 'position': {'x': '660px', 'y': '170px'}
                 }
     ],
-    'second': [
+    'second_paper': [
                 {
                 'type': 'image',
-                'next': 'third',
-                'content': 'page2_img1.jpg',
-                'position': {'x': '35px', 'y': '35px'}
-                },
-                {
-                'type': 'image',
-                'next': 'third',
+                'next': 'thirteenth_uta',
                 'content': 'page2_img2.jpg',
                 'position': {'x': '48%', 'y': '85px'}
-                },
-                {
-                'type': 'text',
-                'content': 'text with a [[third|link]] and [[start|another link]]',
-                'position': {'x': '58%', 'y': '25px'}
-                },
-				{
-                'type': 'image',
-                'next': 'twelveth',
-                'content': 'page2_img3.jpg',
-                'position': {'x': '280', 'y': '457px'}
                 }
-	],
+],
     'third': [
                 {
                 'type': 'image',
@@ -129,7 +111,7 @@ rules = {
                 'content': 'page7_img1.jpg',
                 'position': {'x': '25%', 'y': '8%'}
                 }
-	],
+		],
 	'twelveth': [
                 {
                 'type': 'image',
@@ -149,7 +131,98 @@ rules = {
                 'content': 'page8_img3.jpg',
                 'position': {'x': '38%', 'y': '10%'}
                 }
-	]
+	],
+	'thirteenth_uta': [
+                {
+                'type': 'image',
+                'next': 'fourteenth_bus',
+                'content': 'page2_img2.jpg',
+                'position': {'x': '48%', 'y': '85px'}
+                },
+				{
+                'type': 'image',
+                'next': 'fourteenth_bus',
+                'content': 'page2_img1.jpg',
+                'position': {'x': '8%', 'y': '8%'}
+                }
+	],
+	'fourteenth_bus': [
+                {
+                'type': 'image',
+                'next': 'uta_bus',
+                'content': 'page2_img2.jpg',
+                'position': {'x': '48%', 'y': '85px'}
+                },
+				{
+                'type': 'image',
+                'next': 'moment_sheet',
+                'content': 'page2_img1.jpg',
+                'position': {'x': '8%', 'y': '8%'}
+                },
+				{
+                'type': 'image',
+                'next': 'fifteenth_fulcrum',
+                'content': 'page8_img2.jpg',
+                'position': {'x': '5%', 'y': '409px'}
+                }
+	],
+	'uta_bus': [
+				{
+                'type': 'image',
+                'next': 'moment_sheet',
+                'content': 'page2_img1.jpg',
+                'position': {'x': '8%', 'y': '8%'}
+                },
+				{
+                'type': 'image',
+                'next': 'fifteenth_fulcrum',
+                'content': 'page8_img2.jpg',
+                'position': {'x': '5%', 'y': '409px'}
+                }
+	],
+	'fifteenth_fulcrum': [
+                {
+                'type': 'image',
+                'next': 'proximity',
+                'content': 'page8_img3.jpg',
+                'position': {'x': '455px', 'y': '8%'}
+                },			
+				{
+                'type': 'image',
+                'next': 'fifteenth_fulcrum',
+                'content': 'page8_img2.jpg',
+                'position': {'x': '5%', 'y': '409px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'page8_img1.jpg',
+                'position': {'x': '45%', 'y': '409px'}
+                }
+	],
+	'proximity': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'proximity.jpg',
+                'position': {'x': '15%', 'y': '8%'}
+                }
+	],
+	'moment_sheet': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'moment.jpg',
+                'position': {'x': '600px', 'y': '30px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'sheet.jpg',
+                'position': {'x': '73px', 'y': '380px'}
+                }
+	],
+	
 }
 
 
