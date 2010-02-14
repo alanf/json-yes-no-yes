@@ -73,9 +73,9 @@ main_action = function(event) {
 	});
 
 	// These links are always present on the page
-	var debug_back_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-'+prev+'-'+prev}, 'go back');
-	var start_link = goog.dom.createDom('a', {'href': '', 'id': 'home-start-start'}, 'home');
-	goog.array.forEach([debug_back_link, start_link], function (link) {
+	var debug_back_img = goog.dom.createDom('img', {'src': 'images/back.jpg', 'id': 'debug-'+prev+'-'+prev});
+	var start_img = goog.dom.createDom('img', {'src': 'images/home.jpg', 'id': 'home-start-start'});
+	goog.array.forEach([debug_back_img, start_img], function (link) {
 		goog.array.forEach($$('body'), function (body) {
 			body.appendChild(link);	
 			goog.events.listen(link, goog.events.EventType.CLICK, main_action, false, this);
