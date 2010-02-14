@@ -49,6 +49,7 @@ main_action = function(event) {
 					var link_element = goog.dom.createDom('a', {'href': '', 'id': 'text-'+name+'-'+href+'-'+j+'-'+k}, link_text);
 					goog.dom.appendChild(new_element, link_element);
 					goog.events.listen(link_element, goog.events.EventType.CLICK, main_action, false, this);
+					k += 1;
 				}
 			});
 			j += 1;
