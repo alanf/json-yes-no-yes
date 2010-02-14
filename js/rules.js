@@ -20,12 +20,6 @@ rules = {
                 'position': {'x': '900px', 'y': '110px'}
                 },
                 {
-                'type': 'text',
-                'content': 'this is a large block of text lorem ipsum blah blah internet internet one two [[third|three]] is this thing on? is this [[second|thing]] on? check 2 check2.',
-				'width': '200px',
-                'position': {'x': '260px', 'y': '170px'}
-                },
-                {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',
@@ -63,7 +57,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'focus_light',
                 'content': 'circle_2.jpg',
                 'position': {'x': '400px', 'y': '88%'}
                 }
@@ -119,7 +113,7 @@ rules = {
 	'eleventh': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'universe',
                 'content': 'page7_img1.jpg',
                 'position': {'x': '25%', 'y': '8%'}
                 }
@@ -215,7 +209,7 @@ rules = {
 	'proximity': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'landsandsky',
                 'content': 'proximity.jpg',
                 'position': {'x': '15%', 'y': '8%'}
                 }
@@ -223,13 +217,13 @@ rules = {
 	'moment_sheet': [
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'youthink',
                 'content': 'moment.jpg',
                 'position': {'x': '600px', 'y': '30px'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'lucky_devotion5',
                 'content': 'sheet.jpg',
                 'position': {'x': '73px', 'y': '380px'}
                 }
@@ -237,13 +231,13 @@ rules = {
 	'lucky_apple_OH': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'icecream',
                 'content': 'lucky.jpg',
                 'position': {'x': '25%', 'y': '150px'}
                 },			
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'hair',
                 'content': 'apple.jpg',
                 'position': {'x': '25%', 'y': '600px'}
                 },
@@ -254,24 +248,16 @@ rules = {
                 'position': {'x': '25%', 'y': '1050px'}
                 }
 	],
-	'hair': [
+	'everythingiseverything': [
                 {
                 'type': 'image',
-                'next': 'everything',
-                'content': 'hair.jpg',
-                'position': {'x': '35%', 'y': '8%'}
-                }
-	],
-	'everything': [
-                {
-                'type': 'image',
-                'next': 'story',
+                'next': 'apple',
                 'content': 'everything.jpg',
                 'position': {'x': '50px', 'y': '150px'}
                 },			
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'universe',
                 'content': 'is.jpg',
                 'position': {'x': '250px', 'y': '600px'}
                 },
@@ -301,15 +287,9 @@ rules = {
 	'only2': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'orange_plant',
                 'content': 'only2.jpg',
                 'position': {'x': '35%', 'y': '8%'}
-                },
-				{
-                'type': 'image',
-                'next': 'start',
-                'content': 'only2-1.jpg',
-                'position': {'x': '15%', 'y': '78%'}
                 }
 	],
 	'yolk': [
@@ -323,7 +303,7 @@ rules = {
 	'bag': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'soles_fulcrum',
                 'content': 'bag.jpg',
                 'position': {'x': '20%', 'y': '12%'}
                 }
@@ -342,6 +322,209 @@ rules = {
                 'position': {'x': '8%', 'y': '10%'}
                 }
 	],
+	'focus_light': [
+                {
+                'type': 'image',
+                'next': 'proximity',
+                'content': 'focus_light.jpg',
+                'position': {'x': '25%', 'y': '6%'}
+                }
+	],
+	'soles_fulcrum': [
+				{
+                'type': 'image',
+                'next': '2ways',
+                'content': 'soles.jpg',
+                'position': {'x': '65%', 'y': '32%'}
+                },
+				{
+                'type': 'image',
+                'next': 'hair',
+                'content': 'fulcrum.jpg',
+                'position': {'x': '35%', 'y': '3%'}
+                }
+	],
+	'hair': [
+				{
+                'type': 'image',
+                'next': 'twoways',
+                'content': 'soles.jpg',
+                'position': {'x': '65%', 'y': '32%'}
+                },
+				{
+                'type': 'image',
+                'next': 'hair',
+                'content': 'fulcrum.jpg',
+                'position': {'x': '35%', 'y': '3%'}
+                },
+				{
+                'type': 'image',
+                'next': 'OH',
+                'content': 'hair.jpg',
+                'position': {'x': '8%', 'y': '48%'}
+                }
+	],
+	'OH': [
+                {
+                'type': 'image',
+                'next': 'everythingiseverything',
+                'content': 'OH.jpg',
+                'position': {'x': '25%', 'y': '6%'}
+                }
+	],
+	'lucky_devotion5': [
+				{
+                'type': 'image',
+                'next': 'icecream',
+                'content': 'lucky.jpg',
+                'position': {'x': '600px', 'y': '180px'}
+                },
+				{
+                'type': 'image',
+                'next': 'devotion_1',
+                'content': 'devotion_4.jpg',
+                'position': {'x': '85px', 'y': '180px'}
+                }
+	],
+	'devotion_1': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'devotion_1.jpg',
+                'position': {'x': '23%', 'y': '1%'}
+                }
+	],
+	'apple': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'apple.jpg',
+                'position': {'x': '23%', 'y': '25%'}
+                }
+	],
+	'landsandsky': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'land.jpg',
+                'position': {'x': '15%', 'y': '35%'}
+                },			
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'sand.jpg',
+                'position': {'x': '38%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'sky.jpg',
+                'position': {'x': '60%', 'y': '35%'}
+                }
+	],
+	'youthink': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'youthink.jpg',
+                'position': {'x': '20%', 'y': '12%'}
+                }
+	],
+	
+		'universe': [
+                {
+                'type': 'image',
+                'next': 'seaclouds',
+                'content': 'universe.jpg',
+                'position': {'x': '15%', 'y': '8%'}
+                }
+	],
+		'orange_plant': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'orange.jpg',
+                'position': {'x': '600px', 'y': '180px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'plant.jpg',
+                'position': {'x': '285px', 'y': '180px'}
+                }
+	],
+			'icecream': [
+                {
+                'type': 'image',
+                'next': 'toe',
+                'content': 'icecream.jpg',
+                'position': {'x': '40%', 'y': '12%'}
+                }
+	],
+			'toe': [
+                {
+                'type': 'image',
+                'next': 'hair',
+                'content': 'toe.jpg',
+                'position': {'x': '15%', 'y': '8%'}
+                }
+	],		
+			'twoways': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': '2ways-1.jpg',
+                'position': {'x': '300px', 'y': '8%'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': '2ways-2.jpg',
+                'position': {'x': '650px', 'y': '8%'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': '2ways-3.jpg',
+                'position': {'x': '300px', 'y': '48%'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': '2ways-4.jpg',
+                'position': {'x': '650px', 'y': '48%'}
+                }
+	],
+			'seaclouds': [
+				{
+                'type': 'image',
+                'next': 'ground',
+                'content': 'seaclouds.jpg',
+                'position': {'x': '20%', 'y': '80px'}
+                },
+				{
+                'type': 'image',
+                'next': 'wind',
+                'content': 'clouds.jpg',
+                'position': {'x': '35%', 'y': '280px'}
+                }
+	],
+			'ground': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'ground.jpg',
+                'position': {'x': '20%', 'y': '12%'}
+                }
+	],	
+			'wind': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'wind.jpg',
+                'position': {'x': '15%', 'y': '8%'}
+                }
+	],		
 	
 }
 
