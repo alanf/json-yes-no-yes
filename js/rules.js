@@ -11,19 +11,19 @@ rules = {
                 'type': 'image',
                 'next': 'second_paper',
                 'content': 'dot.jpg',
-                'position': {'x': '50px', 'y': '50px'},
+                'position': {'x': '10%', 'y': '20%'},
                 },
                 {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',
-                'position': {'x': '900px', 'y': '110px'}
+                'position': {'x': '900px', 'y': '310px'}
                 },
                 {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',
-                'position': {'x': '660px', 'y': '170px'}
+                'position': {'x': '660px', 'y': '370px'}
                 }
     ],
     'second_paper': [
@@ -279,7 +279,7 @@ rules = {
 	'only1': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'twoways',
                 'content': 'only1.jpg',
                 'position': {'x': '25%', 'y': '5%'}
                 }
@@ -311,7 +311,7 @@ rules = {
 	'yes': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'bodies4',
                 'content': 'satin.jpg',
                 'position': {'x': '55%', 'y': '52%'}
                 },
@@ -333,7 +333,7 @@ rules = {
 	'soles_fulcrum': [
 				{
                 'type': 'image',
-                'next': '2ways',
+                'next': 'twoways',
                 'content': 'soles.jpg',
                 'position': {'x': '65%', 'y': '32%'}
                 },
@@ -353,7 +353,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'hair',
+                'next': 'ground',
                 'content': 'fulcrum.jpg',
                 'position': {'x': '35%', 'y': '3%'}
                 },
@@ -411,13 +411,13 @@ rules = {
                 },			
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'bodies',
                 'content': 'sand.jpg',
                 'position': {'x': '38%', 'y': '35%'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'emergencybed',
                 'content': 'sky.jpg',
                 'position': {'x': '60%', 'y': '35%'}
                 }
@@ -442,13 +442,13 @@ rules = {
 		'orange_plant': [
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'bodies2',
                 'content': 'orange.jpg',
                 'position': {'x': '600px', 'y': '180px'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'doorway',
                 'content': 'plant.jpg',
                 'position': {'x': '285px', 'y': '180px'}
                 }
@@ -472,25 +472,25 @@ rules = {
 			'twoways': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'fifth_parking',
                 'content': '2ways-1.jpg',
                 'position': {'x': '300px', 'y': '8%'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'beijing',
                 'content': '2ways-2.jpg',
                 'position': {'x': '650px', 'y': '8%'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'over_humps',
                 'content': '2ways-3.jpg',
                 'position': {'x': '300px', 'y': '48%'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'copies',
                 'content': '2ways-4.jpg',
                 'position': {'x': '650px', 'y': '48%'}
                 }
@@ -524,8 +524,134 @@ rules = {
                 'content': 'wind.jpg',
                 'position': {'x': '15%', 'y': '8%'}
                 }
-	],		
-	
+	],	
+			'bodies': [
+                {
+                'type': 'image',
+                'next': 'bodies2',
+                'content': 'body1.jpg',
+                'position': {'x': '10%', 'y': '40%'}
+                }
+	],
+			'bodies2': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'body1.jpg',
+                'position': {'x': '10%', 'y': '40%'}
+                },			
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body2.jpg',
+                'position': {'x': '38%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body3.jpg',
+                'position': {'x': '65%', 'y': '55%'}
+                }
+	],
+			
+			'doorway': [
+                {
+                'type': 'image',
+                'next': 'mirror',
+                'content': 'doorway.jpg',
+                'position': {'x': '5%', 'y': '5%'}
+                }
+	],
+			
+			'mirror': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'mirror.jpg',
+                'position': {'x': '40%', 'y': '5%'}
+                }
+	],
+			'emergencybed': [
+				{
+                'type': 'image',
+                'next': 'bodies4',
+                'content': 'emergency.jpg',
+                'position': {'x': '45%', 'y': '280px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'bed.jpg',
+                'position': {'x': '10%', 'y': '80px'}
+                }
+	],
+			'bodies4': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'bodies4.jpg',
+                'position': {'x': '25%', 'y': '10%'}
+                }
+	],
+			'copies': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'copy1.jpg',
+                'position': {'x': '15%', 'y': '180px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'copy2.jpg',
+                'position': {'x': '45%', 'y': '180px'}
+                }
+	],
+			'beijing': [
+                {
+                'type': 'image',
+                'next': 'push_web',
+                'content': 'beijing.jpg',
+                'position': {'x': '25%', 'y': '10%'}
+                }
+	],
+			'over_humps': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'over.jpg',
+                'position': {'x': '15%', 'y': '0px'}
+                },
+				{
+                'type': 'image',
+                'next': 'sweater',
+                'content': 'humps.jpg',
+                'position': {'x': '35%', 'y': '480px'}
+                }
+	],
+			
+			'push_web': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'web.jpg',
+                'position': {'x': '15%', 'y': '180px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'push.jpg',
+                'position': {'x': '55%', 'y': '180px'}
+                }
+	],
+			'sweater': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'sweater.jpg',
+                'position': {'x': '20%', 'y': '15%'}
+                }
+	],
 }
 
 
