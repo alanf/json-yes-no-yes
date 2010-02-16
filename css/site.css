@@ -4,3 +4,5 @@ p {position: absolute;}
 img {position: absolute;cursor: pointer;}
 #start, #image-init-start-0 {width: 250px; margin-left: auto; margin-right: auto;margin-top:180px;}
 #home-start-start{bottom: 0%; left: 95%; position: absolute;}
+#debug-input{bottom: 0%; right: 180px; position: absolute;}
+.debug-jump-link{bottom: 0%; right: 100px; position: absolute;}

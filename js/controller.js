@@ -7,9 +7,7 @@ var $$ = goog.dom.$$;
 main_action = function(event) {
 	event.preventDefault();
 	// delete everything from the page
-	goog.array.forEach($$('body'), function (body) {
-		goog.dom.removeChildren(body);	
-	});
+	goog.dom.removeChildren($('main-body'));	
 
 	// the previous and next targets
 	var prev = event.target.id.split('-')[1];
@@ -68,22 +66,34 @@ main_action = function(event) {
 		}
 
 		// put the element in the page
-		goog.array.forEach($$('body'), function (body) {
-			body.appendChild(new_element);	
-		});
+		$('main-body').appendChild(new_element);	
 	});
 
 	// These links are always present on the page
 	var debug_back_img = goog.dom.createDom('img', {'src': 'images/back.jpg', 'id': 'debug-'+prev+'-'+prev});
 	var start_img = goog.dom.createDom('img', {'src': 'images/home.jpg', 'id': 'home-start-start'});
 	goog.array.forEach([debug_back_img, start_img], function (link) {
-		goog.array.forEach($$('body'), function (body) {
-			body.appendChild(link);	
-			goog.events.listen(link, goog.events.EventType.CLICK, main_action, false, this);
-		});
+		$('main-body').appendChild(link);	
+		goog.events.listen(link, goog.events.EventType.CLICK, main_action, false, this);
 	});
+	var debug_input = goog.dom.createDom('input', {'type': 'text', 'id': 'debug-input'});
+	$('main-body').appendChild(debug_input);	
+	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
 };
 
+alter_debug_jump_link = function(event) {
+	event.preventDefault();
+	// just remove the old link if there is one, rather than change it in place
+	goog.array.forEach($$('a', 'debug-jump-link'), function (link) {
+		goog.dom.removeNode(link);
+	});
+
+	var target = $('debug-input').value;
+	var debug_jump_link = goog.dom.createDom('a', {'href': '', 'id': 'debug-start-'+ target, 'class': 'debug-jump-link'}, 'go to ' + target + '!');
+	$('main-body').appendChild(debug_jump_link);	
+	goog.events.listen(debug_jump_link, goog.events.EventType.CLICK, main_action, false, this);
+};
+	
 goog.array.forEach($$('img'), function (element) {
 	goog.events.listen(element, goog.events.EventType.CLICK, main_action, false, this);
 });
