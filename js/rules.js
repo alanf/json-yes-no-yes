@@ -803,13 +803,13 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'past_future',
                 'content': 'body6.jpg',
                 'position': {'x': '15%', 'y': '400px'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'twotrees',
                 'content': 'body4.jpg',
                 'position': {'x': '65%', 'y': '40px'}
                 },
@@ -870,6 +870,22 @@ rules = {
                 'next': 'lucky_devotion5',
                 'content': 'devotion5.jpg',
                 'position': {'x': '40%', 'y': '10%'}
+                }
+	],
+				'twotrees': [
+                 {
+                'type': 'text',
+                'content': '[[start|0]]11011000110100101101011011001010010000001110100011101110101111001000000111010001110010011001010110010101110011001000000110001001100101011000110110111101101101011010010110111001100111001000001101111011011100110010[[start|1]]',
+				'width': '100px',
+                'position': {'x': '170px', 'y': '270px'}
+                }
+	],
+				'past_future': [
+				 {
+                'type': 'text',
+                'content': '[[start|past]] [[start|future]] selves',
+				'width': '40px',
+                'position': {'x': '50px', 'y': '370px'}
                 }
 	],
 			
