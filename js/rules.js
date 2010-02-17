@@ -21,7 +21,7 @@ rules = {
                 },
                 {
                 'type': 'image',
-                'next': 'third',
+                'next': 'destination',
                 'content': 'dot.jpg',
                 'position': {'x': '660px', 'y': '370px'}
                 }
@@ -652,6 +652,227 @@ rules = {
                 'position': {'x': '20%', 'y': '15%'}
                 }
 	],
+			'destination': [
+                {
+                'type': 'image',
+                'next': 'destination',
+                'content': 'destination.jpg',
+                'position': {'x': '300px', 'y': '50px'}
+                },
+				  {
+                'type': 'image',
+                'next': 'portland_slice',
+                'content': 'north.jpg',
+                'position': {'x': '361px', 'y': '54px'}
+                },
+				 {
+                'type': 'image',
+                'next': 'hermann',
+                'content': 'right2.jpg',
+                'position': {'x': '356px', 'y': '130px'}
+                },
+				 {
+                'type': 'image',
+                'next': '24nights',
+                'content': 'right_grey.jpg',
+                'position': {'x': '365px', 'y': '242px'}
+                },
+				{
+                'type': 'image',
+                'next': 'exercisesin',
+                'content': 'right_grey2.jpg',
+                'position': {'x': '363px', 'y': '349px'}
+                },
+				{
+                'type': 'image',
+                'next': 'likebreathing',
+                'content': 'right_grey3.jpg',
+                'position': {'x': '357px', 'y': '517px'}
+                },
+				{
+                'type': 'image',
+                'next': 'intobed',
+                'content': 'destination2.jpg',
+                'position': {'x': '324px', 'y': '647px'}
+                }			
+	],
+			'likebreathing': [
+           		 {
+                'type': 'text',
+                'content': 'like [[start|breathing]] through [[start|everybody]]',
+				'width': '290px',
+                'position': {'x': '770px', 'y': '370px'}
+                }
+	],
+			'intobed': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': '22.jpg',
+                'position': {'x': '20%', 'y': '15%'}
+                }
+	],
+				'exercisesin': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'wisdom.jpg',
+                'position': {'x': '15%', 'y': '150px'}
+                },
+				{
+                'type': 'image',
+                'next': 'exercisesin',
+                'content': 'exercises.jpg',
+                'position': {'x': '45%', 'y': '600px'}
+                }
+	],
+				'24nights': [
+				{
+                'type': 'image',
+                'next': 'devotion3',
+                'content': '24_1.jpg',
+                'position': {'x': '20%', 'y': '40px'}
+                },
+				{
+                'type': 'image',
+                'next': '2_1',
+                'content': '24_2.jpg',
+                'position': {'x': '20%', 'y': '185px'}
+                },
+				{
+                'type': 'image',
+                'next': 'light_reliance',
+                'content': '24_3.jpg',
+                'position': {'x': '20%', 'y': '330px'}
+                },
+				{
+                'type': 'image',
+                'next': 'hairdown_x',
+                'content': '24_4.jpg',
+                'position': {'x': '20%', 'y': '475px'}
+                }
+	],
+				'devotion3': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'devotion3.jpg',
+                'position': {'x': '10%', 'y': '3%'}
+                }
+	],
+				'hermann': [
+				{
+                'type': 'image',
+                'next': 'bodies5',
+                'content': 'hermann1.jpg',
+                'position': {'x': '15%', 'y': '40px'}
+                },
+				{
+                'type': 'image',
+                'next': 'bodies5',
+                'content': 'hermann2.jpg',
+                'position': {'x': '15%', 'y': '400px'}
+                },
+				{
+                'type': 'image',
+                'next': 'bodies5',
+                'content': 'hermann3.jpg',
+                'position': {'x': '65%', 'y': '40px'}
+                },
+				{
+                'type': 'image',
+                'next': 'bodies5',
+                'content': 'hermann4.jpg',
+                'position': {'x': '65%', 'y': '400px'}
+                }
+	],
+				'portland_slice': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'portland_slice_print.jpg',
+                'position': {'x': '20%', 'y': '10%'}
+                }
+	],
+				'bodies5': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body1.jpg',
+                'position': {'x': '15%', 'y': '40px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body6.jpg',
+                'position': {'x': '15%', 'y': '400px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body4.jpg',
+                'position': {'x': '65%', 'y': '40px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'body7.jpg',
+                'position': {'x': '65%', 'y': '400px'}
+                }
+	],
+				'2_1': [
+                {
+                'type': 'image',
+                'next': 'devotion5',
+                'content': '2_1.jpg',
+                'position': {'x': '55%', 'y': '45%'}
+                }
+	],
+				'light_reliance': [
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'light.jpg',
+                'position': {'x': '10%', 'y': '50px'}
+                },
+				{
+                'type': 'image',
+                'next': 'antenna',
+                'content': 'reliance.jpg',
+                'position': {'x': '65%', 'y': '450px'}
+                }
+	],
+				'hairdown_x': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'hair_down.jpg',
+                'position': {'x': '15%', 'y': '30%'}
+                },			
+				{
+                'type': 'image',
+                'next': 'yolk',
+                'content': 'x.jpg',
+                'position': {'x': '50%', 'y': '30%'}
+                }
+	],
+				'antenna': [
+                {
+                'type': 'image',
+                'next': 'orange_plant',
+                'content': 'antenna.jpg',
+                'position': {'x': '40%', 'y': '5%'}
+                }
+	],
+				'devotion5': [
+                {
+                'type': 'image',
+                'next': 'lucky_devotion5',
+                'content': 'devotion5.jpg',
+                'position': {'x': '40%', 'y': '10%'}
+                }
+	],
+			
 }
 
 
