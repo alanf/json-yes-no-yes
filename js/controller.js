@@ -34,6 +34,8 @@ main_action = function(event) {
 			var text = rule['content'].split(']]');
 				
 			var k = 0;
+			goog.events.listen(new_element, goog.events.EventType.CLICK, main_action, false, this);
+
 			// There could be multiple links present
 			goog.array.forEach(text, function(fragment) {
 				var text_content = fragment.split('[[')[0];
@@ -58,9 +60,11 @@ main_action = function(event) {
 		if (rule['position']) {
 			style += 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
 		}
-		if (rule['width'] && goog.string.trim(rule['width'])) {
-			style += 'width: ' + rule['width'];
-		}
+		goog.array.forEach(['width', 'color'], function (css_rule) {
+			if (rule[css_rule] && goog.string.trim(rule[css_rule])) {
+				style += css_rule + ': ' + rule[css_rule];
+			}
+		});
 		if (style) {
 			goog.dom.setProperties(new_element, {'style': style});
 		}
