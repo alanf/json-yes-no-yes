@@ -60,6 +60,7 @@ main_action = function(event) {
 		if (rule['position']) {
 			style += 'position: absolute; left:' + rule['position']['x'] + '; top: ' + rule['position']['y'] + ';'; 
 		}
+
 		goog.array.forEach(['width', 'color'], function (css_rule) {
 			if (rule[css_rule] && goog.string.trim(rule[css_rule])) {
 				style += css_rule + ': ' + rule[css_rule];
@@ -68,7 +69,12 @@ main_action = function(event) {
 		if (style) {
 			goog.dom.setProperties(new_element, {'style': style});
 		}
-		goog.dom.setProperties(new_element, {'class': name +  ' ' + rule['type']});
+		var class_name = '';
+		if (rule['next']) {
+			class_name += ' has-next ';
+		}
+		class_name += name +  ' ' + rule['type'];
+		goog.dom.setProperties(new_element, {'class': goog.string.trim(class_name)});
 
 		// put the element in the page
 		$('main-body').appendChild(new_element);	
