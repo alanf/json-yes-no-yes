@@ -64,6 +64,7 @@ main_action = function(event) {
 		if (style) {
 			goog.dom.setProperties(new_element, {'style': style});
 		}
+		goog.dom.setProperties(new_element, {'class': name +  ' ' + rule['type']});
 
 		// put the element in the page
 		$('main-body').appendChild(new_element);	
