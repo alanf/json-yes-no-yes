@@ -1,4 +1,5 @@
 rules = {
+'terms1': [  {  'type': 'text',  'next': 'terms2',  'content': 'theory',  'color': 'red',  'position': {'x': '45%', 'y': '45%'}  }   ],
 	'init': [
                 {
                 'type': 'image',
