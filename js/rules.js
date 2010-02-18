@@ -24,6 +24,12 @@ rules = {
                 'next': 'destination',
                 'content': 'dot.jpg',
                 'position': {'x': '460px', 'y': '350px'}
+                },
+				{
+                'type': 'image',
+                'next': 'terms',
+                'content': 'dot.jpg',
+                'position': {'x': '10px', 'y': '370px'}
                 }
     ],
     'second_paper': [
@@ -323,9 +329,17 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'mushroom',
                 'content': 'ocean.jpg',
                 'position': {'x': '8%', 'y': '10%'}
+                }
+	],
+	'mushroom': [
+                {
+                'type': 'image',
+                'next': 'orange_plant',
+                'content': 'mushroom.jpg',
+                'position': {'x': '25%', 'y': '6%'}
                 }
 	],
 	'focus_light': [
@@ -572,7 +586,7 @@ rules = {
 			'mirror': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'toilet',
                 'content': 'mirror.jpg',
                 'position': {'x': '40%', 'y': '5%'}
                 }
@@ -1033,8 +1047,39 @@ rules = {
                 'content': 'arm.jpg',
                 'position': {'x': '50%', 'y': '20%'}
                 }
-	],			
-			
+	],					
+				'terms1': [
+                {
+                'type': 'text',
+                'next': 'terms2',
+                'content': 'theory',
+				'color': 'red',
+                'position': {'x': '45%', 'y': '45%'}
+                }	
+	],
+				'terms2': [
+                {
+                'type': 'text',
+                'next': 'start',
+                'content': 'theory',
+                'position': {'x': '45%', 'y': '45%'}
+                },
+                {
+                'type': 'text',
+                'next': 'start',
+                'content': 'practice',
+				'color': 'gray',
+                'position': {'x': '45%', 'y': '45%'}
+                }
+	],
+				'toilet': [
+                {
+                'type': 'image',
+                'next': 'ground',
+                'content': 'toilet.jpg',
+                'position': {'x': '20%', 'y': '15%'}
+                }	
+	],
 }
 
 

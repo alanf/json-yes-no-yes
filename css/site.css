@@ -7,4 +7,9 @@ img {position: absolute;cursor: pointer;}
 #home-start-start{bottom: 5%; left: 92%; position: absolute;}
 #debug-input{bottom: 5%; right: 180px; position: absolute;}
 .debug-jump-link{bottom: 5%; right: 100px; position: absolute;}
+<<<<<<< .mine
+
+p.terms1 {'Times New Roman', Times, serif;font-size:40px;}
+=======
 .has-next {cursor:pointer;}
+>>>>>>> .r48
