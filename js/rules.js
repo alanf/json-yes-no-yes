@@ -28,7 +28,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'terms',
+                'next': 'terms1',
                 'content': 'dot.jpg',
                 'position': {'x': '10px', 'y': '370px'}
                 }
@@ -1054,23 +1054,23 @@ rules = {
                 'type': 'text',
                 'next': 'terms2',
                 'content': 'theory',
-				'color': 'red',
+				'color': 'black',
                 'position': {'x': '45%', 'y': '45%'}
                 }	
 	],
 				'terms2': [
                 {
                 'type': 'text',
-                'next': 'start',
+				'next': 'terms3',
                 'content': 'theory',
                 'position': {'x': '45%', 'y': '45%'}
                 },
                 {
                 'type': 'text',
-                'next': 'start',
                 'content': 'practice',
-				'color': 'gray',
-                'position': {'x': '45%', 'y': '45%'}
+				'next': 'terms3',
+				'color': 'black',
+                'position': {'x': '44%', 'y': '36%'}
                 }
 	],
 				'toilet': [
@@ -1081,6 +1081,260 @@ rules = {
                 'position': {'x': '20%', 'y': '15%'}
                 }	
 	],
+				'terms3': [
+                {
+                'type': 'text',
+				'next': 'terms4',
+                'content': 'theory',
+                'position': {'x': '45%', 'y': '45%'}
+                },
+                {
+                'type': 'text',
+                'content': 'practice',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '44%', 'y': '36%'}
+                },
+				{
+                'type': 'text',
+                'content': 'dialogue',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '24%', 'y': '26%'}
+                },
+				{
+                'type': 'text',
+                'content': 'discourse',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '54%', 'y': '42%'}
+                },
+				{
+                'type': 'text',
+                'content': 'gesture',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '64%', 'y': '62%'}
+                },
+				{
+                'type': 'text',
+                'content': 'index',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '59%', 'y': '32%'}
+                },
+				{
+                'type': 'text',
+                'content': 'signifier',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '53%', 'y': '47%'}
+                },
+				{
+                'type': 'text',
+                'content': 'icon',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '73%', 'y': '39%'}
+                },
+				{
+                'type': 'text',
+                'content': 'medium',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '55%', 'y': '33%'}
+                },
+				{
+                'type': 'text',
+                'content': 'representation',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '68%', 'y': '63%'}
+                },
+				{
+                'type': 'text',
+                'content': 'perspective',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '15%', 'y': '43%'}
+                },
+				{
+                'type': 'text',
+                'content': 'temporality',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '15%', 'y': '23%'}
+                },
+				{
+                'type': 'text',
+                'content': 'referent',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '15%', 'y': '21%'}
+                },
+				{
+                'type': 'text',
+                'content': 'dimension',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '18%', 'y': '19%'}
+                },
+				{
+                'type': 'text',
+                'content': 'dimension',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '18%', 'y': '19%'}
+                },
+				{
+                'type': 'text',
+                'content': 'composition',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '8%', 'y': '19%'}
+                },
+				{
+                'type': 'text',
+                'content': 'specificity',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '8%', 'y': '9%'}
+                },
+				{
+                'type': 'text',
+                'content': 'fetish',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '8%', 'y': '69%'}
+                },
+				{
+                'type': 'text',
+                'content': 'milieu',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '18%', 'y': '5%'}
+                },
+				{
+                'type': 'text',
+                'content': 'spectacle',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '16%', 'y': '79%'}
+                },
+				{
+                'type': 'text',
+                'content': 'realm',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '16%', 'y': '79%'}
+                },
+				{
+                'type': 'text',
+                'content': 'absence',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '16%', 'y': '75%'}
+                },
+				{
+                'type': 'text',
+                'content': 'consciousness',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '67%', 'y': '5%'}
+                },
+				{
+                'type': 'text',
+                'content': 'coherence',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '68%', 'y': '7%'}
+                },
+				{
+                'type': 'text',
+                'content': 'obliqueness',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '45%', 'y': '80%'}
+                },
+				{
+                'type': 'text',
+                'content': 'paradigm',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '45%', 'y': '3%'}
+                },
+				{
+                'type': 'text',
+                'content': 'appropriate',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '36%', 'y': '5%'}
+                },
+				{
+                'type': 'text',
+                'content': 'interpretation',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '25%', 'y': '50%'}
+                },
+				{
+                'type': 'text',
+                'content': 'intervention',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '25%', 'y': '53%'}
+                },
+				{
+                'type': 'text',
+                'content': 'construction',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '29%', 'y': '62%'}
+                },
+				{
+                'type': 'text',
+                'content': 'connotation',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '26%', 'y': '64%'}
+                },
+				{
+                'type': 'text',
+                'content': 'explorationn',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '22%', 'y': '59%'}
+                },
+				{
+                'type': 'text',
+                'content': 'contradiction',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '70%', 'y': '17%'}
+                },
+				{
+                'type': 'text',
+                'content': 'convention',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '70%', 'y': '27%'}
+                },
+				{
+                'type': 'text',
+                'content': 'limitation',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '60%', 'y': '16%'}
+                },
+				{
+                'type': 'text',
+                'content': 'symbol',
+				'next': 'terms4',
+				'color': 'black',
+                'position': {'x': '56%', 'y': '27%'}
+                }
+	],
 }
+
 
 
