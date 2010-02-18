@@ -17,13 +17,13 @@ rules = {
                 'type': 'image',
                 'next': 'third',
                 'content': 'dot.jpg',
-                'position': {'x': '900px', 'y': '310px'}
+                'position': {'x': '750px', 'y': '280px'}
                 },
                 {
                 'type': 'image',
                 'next': 'destination',
                 'content': 'dot.jpg',
-                'position': {'x': '660px', 'y': '370px'}
+                'position': {'x': '460px', 'y': '350px'}
                 }
     ],
     'second_paper': [
@@ -271,9 +271,15 @@ rules = {
 	'story': [
 				{
                 'type': 'text',
-                'content': '[[only1|only]] the [[yes|yes]] [[only2|only]] the  [[yolk|now]]',
+                'content': '[[only1|only]] the [[yes|yes]] [[only2|only]] the [[yolk|now]]',
 				'width': '90px',
-                'position': {'x': '270px', 'y': '270px'}
+                'position': {'x': '150px', 'y': '90px'}
+                },
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'van_sanfran.jpg',
+                'position': {'x': '50%', 'y': '20px'}
                 }
 	],
 	'only1': [
@@ -520,7 +526,7 @@ rules = {
 			'wind': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'garage_arm',
                 'content': 'wind.jpg',
                 'position': {'x': '15%', 'y': '8%'}
                 }
@@ -875,7 +881,7 @@ rules = {
 				'twotrees': [
                  {
                 'type': 'text',
-                'content': '[[start|0]]11011000110100101101011011001010010000001110100011101110101111001000000111010001110010011001010110010101110011001000000110001001100101011000110110111101101101011010010110111001100111001000001101111011011100110010[[start|1]]',
+                'content': '[[tree1|0]]11011000110100101101011011001010010000001110100011101110101111001000000111010001110010011001010110010101110011001000000110001001100101011000110110111101101101011010010110111001100111001000001101111011011100110010[[tree2|1]]',
 				'width': '100px',
                 'position': {'x': '170px', 'y': '270px'}
                 }
@@ -888,6 +894,146 @@ rules = {
                 'position': {'x': '50px', 'y': '370px'}
                 }
 	],
+				'tree1': [
+                {
+                'type': 'image',
+                'next': 'vent',
+                'content': 'tree1.jpg',
+                'position': {'x': '40%', 'y': '10%'}
+                }
+	],
+				'tree2': [
+                {
+                'type': 'image',
+                'next': 'cushion',
+                'content': 'tree2.jpg',
+                'position': {'x': '15%', 'y': '28%'}
+                }
+	],
+				'cushion': [
+                {
+                'type': 'image',
+                'next': 'thelongest',
+                'content': 'cushion.jpg',
+                'position': {'x': '5%', 'y': '18%'}
+                }
+	],
+				
+				'thelongest': [
+                {
+                'type': 'image',
+                'next': 'bark',
+                'content': 'thelongest.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                },
+                {
+                'type': 'image',
+                'next': 'invisible',
+                'content': 'thelongest2.jpg',
+                'position': {'x': '10%', 'y': '20%'}
+                },
+				{
+                'type': 'image',
+                'next': 'thelongest3',
+                'content': 'thelongest3.jpg',
+                'position': {'x': '15%', 'y': '25%'}
+                },
+				{
+                'type': 'image',
+                'next': 'thelongest4',
+                'content': 'thelongest4.jpg',
+                'position': {'x': '20%', 'y': '30%'}
+                },
+				{
+                'type': 'image',
+                'next': 'thelongest5',
+                'content': 'thelongest5.jpg',
+                'position': {'x': '25%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'wall',
+                'content': 'thelongest6.jpg',
+                'position': {'x': '30%', 'y': '40%'}
+                }
+	],
+				'bark': [
+                {
+                'type': 'image',
+                'next': 'circles',
+				'width': '100%',
+                'content': 'bark.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+				'circles': [
+				{
+                'type': 'image',
+                'next': 'yolk',
+                'content': 'circle_1.jpg',
+                'position': {'x': '235px', 'y': '30%'}
+                },
+				{
+                'type': 'image',
+                'next': 'focus_light',
+                'content': 'circle_2.jpg',
+                'position': {'x': '500px', 'y': '30%'}
+                }
+    ],
+				
+				'invisible': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'invisible.jpg',
+                'position': {'x': '40%', 'y': '40%'}
+                }
+	],
+				'wall': [
+                {
+                'type': 'image',
+                'next': 'uta_snowed',
+                'content': 'wall.jpg',
+                'position': {'x': '25%', 'y': '20%'}
+                }
+	],
+				'vent': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'vent.jpg',
+                'position': {'x': '30%', 'y': '10%'}
+                }
+	],
+				
+				'uta_snowed': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'uta2.jpg',
+                'position': {'x': '40%', 'y': '10px'}
+                },			
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'snowed.jpg',
+                'position': {'x': '30%', 'y': '42%'}
+                }
+	],		
+				'garage_arm': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'garage.jpg',
+                'position': {'x': '25%', 'y': '30%'}
+                },			
+				{
+                'type': 'image',
+                'next': 'start',
+                'content': 'arm.jpg',
+                'position': {'x': '50%', 'y': '20%'}
+                }
+	],			
 			
 }
 
