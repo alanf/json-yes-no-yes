@@ -660,7 +660,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'breathingdeeply',
                 'content': 'push.jpg',
                 'position': {'x': '55%', 'y': '180px'}
                 }
@@ -1780,8 +1780,26 @@ rules = {
 		'terms5': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'ah',
                 'content': 'terms5.jpg',
+				'width': '85%',
+                'position': {'x': '6%', 'y': '5%'}
+                }
+	],
+		'ah': [
+                {
+                'type': 'image',
+                'next': 'universe',
+                'content': 'ah.jpg',
+				'width': '85%',
+                'position': {'x': '6%', 'y': '5%'}
+                }
+	],
+		'breathingdeeply': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'breathingdeeply.jpg',
 				'width': '85%',
                 'position': {'x': '6%', 'y': '5%'}
                 }
