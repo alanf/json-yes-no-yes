@@ -136,7 +136,7 @@ rules = {
                 'type': 'image',
                 'next': 'start',
                 'content': 'page8_img1.jpg',
-                'position': {'x': '50%', 'y': '50%'}
+                'position': {'x': '50%', 'y': '45%'}
                 },
                 {
                 'type': 'image',
@@ -182,7 +182,7 @@ rules = {
                 'type': 'image',
                 'next': 'story',
                 'content': 'page8_img2.jpg',
-                'position': {'x': '5%', 'y': '409px'}
+                'position': {'x': '5%', 'y': '359px'}
                 }
 	],
 	'uta_bus': [
@@ -290,9 +290,9 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'likebreathing',
                 'content': 'van_sanfran.jpg',
-                'position': {'x': '50%', 'y': '20px'}
+                'position': {'x': '50%', 'y': '40%'}
                 }
 	],
 	'only1': [
@@ -424,7 +424,7 @@ rules = {
 	'apple': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'story',
                 'content': 'apple.jpg',
                 'position': {'x': '20%', 'y': '20%'}
                 }
@@ -706,7 +706,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'exercisesin',
+                'next': 'start',
                 'content': 'right_grey2.jpg',
                 'position': {'x': '363px', 'y': '349px'}
                 },
@@ -726,7 +726,7 @@ rules = {
 			'likebreathing': [
            		 {
                 'type': 'text',
-                'content': 'like [[start|breathing]] through [[start|everybody]]',
+                'content': 'like [[wind|breathing]] through [[hermann|everybody]]',
 				'width': '290px',
                 'position': {'x': '770px', 'y': '370px'}
                 }
@@ -734,7 +734,7 @@ rules = {
 			'intobed': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': '24nights',
                 'content': '22.jpg',
                 'position': {'x': '20%', 'y': '15%'}
                 }
@@ -782,7 +782,7 @@ rules = {
 				'devotion3': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'emergencybed',
                 'content': 'devotion3.jpg',
                 'position': {'x': '10%', 'y': '3%'}
                 }
@@ -813,7 +813,7 @@ rules = {
                 'position': {'x': '65%', 'y': '300px'}
                 }
 	],
-				'_slice': [
+				'portland_slice': [
                 {
                 'type': 'image',
                 'next': 'breathingdeeply',
@@ -910,7 +910,7 @@ rules = {
 				'past_future': [
 				 {
                 'type': 'text',
-                'content': '[[start|past]] [[start|future]] [[past_future|selves]]',
+                'content': '[[portland_slice|past]] [[invisible|future]] [[past_future|selves]]',
 				'width': '40px',
                 'position': {'x': '50px', 'y': '370px'}
                 }
