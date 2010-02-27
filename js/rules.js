@@ -37,6 +37,12 @@ rules = {
                 'next': 'ground',
                 'content': 'dot.jpg',
                 'position': {'x': '350px', 'y': '200px'}
+                },
+				{
+                'type': 'image',
+                'next': 'misc',
+                'content': 'dot.jpg',
+                'position': {'x': '470px', 'y': '20px'}
                 }
     ],
     'second_paper': [
@@ -292,7 +298,7 @@ rules = {
                 'type': 'image',
                 'next': 'likebreathing',
                 'content': 'van_sanfran.jpg',
-                'position': {'x': '50%', 'y': '40%'}
+                'position': {'x': '45%', 'y': '30%'}
                 }
 	],
 	'only1': [
@@ -1874,6 +1880,217 @@ rules = {
                 'position': {'x': '5%', 'y': '12%'}
                 }
 	],
+		'misc': [
+                {
+                'type': 'image',
+                'next': 'gestalt',
+                'content': 'bundt.jpg',
+                'position': {'x': '7%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'misc',
+                'content': 'urinary.jpg',
+                'position': {'x': '47%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'nothing1',
+                'content': 'incense2.jpg',
+                'position': {'x': '62%', 'y': '5%'}
+                },
+				{
+                'type': 'image',
+                'next': 'chad',
+                'content': 'eye.jpg',
+                'position': {'x': '52%', 'y': '54%'}
+                },
+				{
+                'type': 'image',
+                'next': 'brain',
+                'content': 'cube.jpg',
+                'position': {'x': '20%', 'y': '56%'}
+                },
+	],
+		'brain': [
+                {
+                'type': 'image',
+                'next': 'brain2',
+				'width': '100%',
+                'content': 'brain.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'brain2': [
+                {
+                'type': 'image',
+                'next': 'brain',
+				'width': '100%',
+                'content': 'brain2.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'gestalt': [
+                {
+                'type': 'image',
+                'next': 'coordinates',
+                'content': 'gestalt1.jpg',
+                'position': {'x': '45%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'knitting',
+                'content': 'gestalt2.jpg',
+                'position': {'x': '30%', 'y': '55%'}
+                },
+				{
+                'type': 'image',
+                'next': 'list',
+                'content': 'gestalt3.jpg',
+                'position': {'x': '60%', 'y': '55%'}
+                },
+	],
+		'list': [
+                {
+                'type': 'image',
+                'next': 'gestalt',
+				'content': 'list.jpg',
+                'position': {'x': '30%', 'y': '10%'}
+                }
+	],
+		'knitting': [
+           		 {
+                'type': 'text',
+                'content': '[[start|P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. K the k sts and p the p sts as they face you. P2, * CB4, p2,CB2, p2, k2, p2, rep from * to last 6 sts, end CB4, p2. K the k sts and p the p sts as they face you. P2, * k4, p2, CB2, p2, k2, p2, rep from * to last 6 sts, end k4, p2. P2, k4, p2, CF4, k2, rep from * to last 8 sts, end p2, k4, p2. K the k sts and p the p sts as they face you. P2, CB4, p2, k2, CB4, rep from * to last 8 sts, end p2, CB4, p2. K the k sts and p the p sts as they face you. K2, p4, TF4, TB4, k2, p2, k2, p4, TB4, TF4, p2 twice, k2. K the k sts and p the p sts as they face you. K2, p6, * CF4, TB4, p2, TF4, TB4, p4, TF4 *, p2, rep once more, end k2. K2, p6, * k2, CB4, p6, CB4, p8, k2 *, p2, rep between *s once more, end k2. K2, p6, * CF4, TF4, p2, TB4, TF4, p4, TB4 *, p2, rep between *s once more, end k2. K2, p4, TB4, TF4, k2, p2, k2, p4, TF4, TB4, p2 twice, k2. K2, p2, TB4, p4, CB4, p2, TF4, p4, CB4, p2 twice, p2, k2. K2, p2, k2, p4, TB4, TF4, p2, TF4, TB4, k2, p2 twice, p2, k2. K2, p2, TF4, TB4, p4, TF4, p2, CF4, TB4, p2 twice, p2, k2. K2, p4, CF4, p8, k2, p2, k2, CB4, p6 twice, k2. K2, p2, TB4, TF4, p4, TB4, p2, CF4, TF4, p2 twice, p2, k2. K2, p2, k2, p4, TF4, TB4, p2, TB4, TF4, k2, p2 twice, p2, k2. K2, p2, TF4, p4, CB4, p2, TB4, p4, CB4, p2 twice, p2, k2.]]',
+				'width': '467px',
+                'position': {'x': '25%', 'y': '100px'}
+                }
+	],
+		'coordinates': [
+           		 {
+                'type': 'text',
+                'content': '[[latitude|42.270783]], [[longitude|-85.629866]]',
+				'width': '600px',
+                'position': {'x': '150px', 'y': '390px'}
+                }
+	],
+		'latitude': [
+                {
+                'type': 'image',
+                'next': 'latlong',
+                'content': 'latitude.jpg',
+				'width': '100%',
+                'position': {'x': '0%', 'y': '60px'}
+                }
+	],
+		'longitude': [
+                {
+                'type': 'image',
+                'next': 'latlong',
+                'content': 'longitude.jpg',
+				'width': '100%',
+                'position': {'x': '0%', 'y': '60px'}
+                }
+	],
+		
+		'latlong': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'latlong.jpg',
+				'width': '100%',
+                'position': {'x': '0%', 'y': '60px'}
+                }
+	],
+		'chad': [
+                {
+                'type': 'image',
+                'next': 'chad',
+                'content': 'ch.jpg',
+                'position': {'x': '20%', 'y': '25%'}
+                }
+	],
+		'nothing1': [
+                {
+                'type': 'image',
+                'next': 'nothing2',
+                'content': 'nothing1.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'nothing2': [
+                {
+                'type': 'image',
+                'next': 'nothing3',
+                'content': 'nothing2.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'nothing3': [
+                {
+                'type': 'image',
+                'next': 'nothing4',
+                'content': 'nothing3.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'nothing4': [
+                {
+                'type': 'image',
+                'next': 'nothingsomething',
+                'content': 'nothing4.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'nothingsomething': [
+                {
+                'type': 'image',
+                'next': 'red',
+                'content': 'nothingsomething.jpg',
+                'position': {'x': '54px', 'y': '54px'}
+                }
+	],
+		'red': [
+                {
+                'type': 'image',
+                'next': 'green',
+                'content': 'red.jpg',
+                'position': {'x': '54px', 'y': '54px'}
+                }
+	],
+		
+		'green': [
+                {
+                'type': 'image',
+                'next': 'redgreen',
+                'content': 'green.jpg',
+                'position': {'x': '420px', 'y': '54px'}
+                }
+	],
+		'redgreen': [
+                {
+                'type': 'image',
+                'next': 'nothing1',
+                'content': 'green.jpg',
+                'position': {'x': '420px', 'y': '54px'}
+                },
+				{
+                'type': 'image',
+                'next': 'nothing5',
+                'content': 'red.jpg',
+                'position': {'x': '54px', 'y': '54px'}
+                }
+	],
+		'nothing5': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'nothing1.jpg',
+                'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+
+
 }
 
 
