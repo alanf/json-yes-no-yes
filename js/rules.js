@@ -34,7 +34,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'ground',
+                'next': 'satin_sweater',
                 'content': 'dot.jpg',
                 'position': {'x': '350px', 'y': '200px'}
                 },
@@ -43,6 +43,24 @@ rules = {
                 'next': 'misc',
                 'content': 'dot.jpg',
                 'position': {'x': '470px', 'y': '20px'}
+                },
+				{
+                'type': 'image',
+                'next': 'bark',
+                'content': 'dot.jpg',
+                'position': {'x': '690px', 'y': '50px'}
+                },
+				{
+                'type': 'image',
+                'next': 'ceiling1',
+                'content': 'dot.jpg',
+                'position': {'x': '250px', 'y': '430px'}
+                },
+				{
+                'type': 'image',
+                'next': 'twotrees',
+                'content': 'dot.jpg',
+                'position': {'x': '650px', 'y': '440px'}
                 }
     ],
     'second_paper': [
@@ -70,7 +88,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'yolk',
+                'next': 'yolk2',
                 'content': 'circle_1.jpg',
                 'position': {'x': '135px', 'y': '85%'}
                 },
@@ -256,7 +274,7 @@ rules = {
                 },			
 				{
                 'type': 'image',
-                'next': 'hair',
+                'next': 'hair2',
                 'content': 'apple.jpg',
                 'position': {'x': '25%', 'y': '600px'}
                 },
@@ -290,7 +308,7 @@ rules = {
 	'story': [
 				{
                 'type': 'text',
-                'content': '[[only1|only]] the [[yes|yes]] [[only2|only]] the [[yolk|now]]',
+                'content': '[[only1|only]] the [[yes|yes]] [[only2|only]] the [[yolk3|now]]',
 				'width': '90px',
                 'position': {'x': '150px', 'y': '90px'}
                 },
@@ -446,11 +464,11 @@ rules = {
                 'type': 'image',
                 'next': 'bodies',
                 'content': 'sand.jpg',
-                'position': {'x': '35%', 'y': '35%'}
+                'position': {'x': '37%', 'y': '35%'}
                 },
 				{
                 'type': 'image',
-                'next': 'emergencybed',
+                'next': 'emergency',
                 'content': 'sky.jpg',
                 'position': {'x': '60%', 'y': '35%'}
                 }
@@ -475,7 +493,7 @@ rules = {
 		'orange_plant': [
 				{
                 'type': 'image',
-                'next': 'bodies2',
+                'next': 'brighter',
                 'content': 'orange.jpg',
                 'position': {'x': '400px', 'y': '100px'}
                 },
@@ -569,19 +587,19 @@ rules = {
 			'bodies2': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'colordots',
                 'content': 'body1.jpg',
                 'position': {'x': '10%', 'y': '40%'}
                 },			
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'thelongest',
                 'content': 'body2.jpg',
                 'position': {'x': '38%', 'y': '10%'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'gestalt',
                 'content': 'body3.jpg',
                 'position': {'x': '65%', 'y': '55%'}
                 }
@@ -629,15 +647,15 @@ rules = {
 			'copies': [
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'bent',
                 'content': 'copy1.jpg',
-                'position': {'x': '15%', 'y': '180px'}
+                'position': {'x': '15%', 'y': '150px'}
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'brain',
                 'content': 'copy2.jpg',
-                'position': {'x': '45%', 'y': '180px'}
+                'position': {'x': '52%', 'y': '150px'}
                 }
 	],
 			'beijing': [
@@ -651,7 +669,7 @@ rules = {
 			'over_humps': [
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'only1',
                 'content': 'over.jpg',
                 'position': {'x': '15%', 'y': '80px'}
                 },
@@ -712,7 +730,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'start',
+                'next': 'misc',
                 'content': 'right_grey2.jpg',
                 'position': {'x': '363px', 'y': '349px'}
                 },
@@ -732,7 +750,7 @@ rules = {
 			'likebreathing': [
            		 {
                 'type': 'text',
-                'content': 'like [[wind|breathing]] through [[hermann|everybody]]',
+                'content': '[[wind|like breathing]] [[hermann|through everybody]]',
 				'width': '290px',
                 'position': {'x': '770px', 'y': '370px'}
                 }
@@ -878,7 +896,7 @@ rules = {
 				'hairdown_x': [
                 {
                 'type': 'image',
-                'next': 'start',
+                'next': 'colordots',
                 'content': 'hair_down.jpg',
                 'position': {'x': '15%', 'y': '30%'}
                 },			
@@ -916,7 +934,7 @@ rules = {
 				'past_future': [
 				 {
                 'type': 'text',
-                'content': '[[portland_slice|past]] [[invisible|future]] [[past_future|selves]]',
+                'content': '[[portland_slice|past]] [[brighter|future]] [[past_future|selves]]',
 				'width': '40px',
                 'position': {'x': '50px', 'y': '370px'}
                 }
@@ -996,9 +1014,9 @@ rules = {
 				'circles': [
 				{
                 'type': 'image',
-                'next': 'yolk',
+                'next': 'chad2',
                 'content': 'circle_1.jpg',
-                'position': {'x': '235px', 'y': '30%'}
+                'position': {'x': '300px', 'y': '30%'}
                 },
 				{
                 'type': 'image',
@@ -1027,7 +1045,7 @@ rules = {
 				'vent': [
                 {
                 'type': 'image',
-                'next': 'mushroom',
+                'next': 'x',
                 'content': 'vent.jpg',
                 'position': {'x': '30%', 'y': '10%'}
                 }
@@ -1889,7 +1907,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'misc',
+                'next': 'bodies5',
                 'content': 'urinary.jpg',
                 'position': {'x': '47%', 'y': '15%'}
                 },
@@ -1953,7 +1971,7 @@ rules = {
 		'list': [
                 {
                 'type': 'image',
-                'next': 'gestalt',
+                'next': 'landsandsky',
 				'content': 'list.jpg',
                 'position': {'x': '30%', 'y': '10%'}
                 }
@@ -1961,7 +1979,7 @@ rules = {
 		'knitting': [
            		 {
                 'type': 'text',
-                'content': '[[start|P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. K the k sts and p the p sts as they face you. P2, * CB4, p2,CB2, p2, k2, p2, rep from * to last 6 sts, end CB4, p2. K the k sts and p the p sts as they face you. P2, * k4, p2, CB2, p2, k2, p2, rep from * to last 6 sts, end k4, p2. P2, k4, p2, CF4, k2, rep from * to last 8 sts, end p2, k4, p2. K the k sts and p the p sts as they face you. P2, CB4, p2, k2, CB4, rep from * to last 8 sts, end p2, CB4, p2. K the k sts and p the p sts as they face you. K2, p4, TF4, TB4, k2, p2, k2, p4, TB4, TF4, p2 twice, k2. K the k sts and p the p sts as they face you. K2, p6, * CF4, TB4, p2, TF4, TB4, p4, TF4 *, p2, rep once more, end k2. K2, p6, * k2, CB4, p6, CB4, p8, k2 *, p2, rep between *s once more, end k2. K2, p6, * CF4, TF4, p2, TB4, TF4, p4, TB4 *, p2, rep between *s once more, end k2. K2, p4, TB4, TF4, k2, p2, k2, p4, TF4, TB4, p2 twice, k2. K2, p2, TB4, p4, CB4, p2, TF4, p4, CB4, p2 twice, p2, k2. K2, p2, k2, p4, TB4, TF4, p2, TF4, TB4, k2, p2 twice, p2, k2. K2, p2, TF4, TB4, p4, TF4, p2, CF4, TB4, p2 twice, p2, k2. K2, p4, CF4, p8, k2, p2, k2, CB4, p6 twice, k2. K2, p2, TB4, TF4, p4, TB4, p2, CF4, TF4, p2 twice, p2, k2. K2, p2, k2, p4, TF4, TB4, p2, TB4, TF4, k2, p2 twice, p2, k2. K2, p2, TF4, p4, CB4, p2, TB4, p4, CB4, p2 twice, p2, k2.]]',
+                'content': '[[sheet2|P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. P2, k4, (p2, k2) twice, p2, rep from * to last 6 sts, end k4, p2. K the k sts and p the p sts as they face you. P2, * CB4, p2,CB2, p2, k2, p2, rep from * to last 6 sts, end CB4, p2. K the k sts and p the p sts as they face you. P2, * k4, p2, CB2, p2, k2, p2, rep from * to last 6 sts, end k4, p2. P2, k4, p2, CF4, k2, rep from * to last 8 sts, end p2, k4, p2. K the k sts and p the p sts as they face you. P2, CB4, p2, k2, CB4, rep from * to last 8 sts, end p2, CB4, p2. K the k sts and p the p sts as they face you. K2, p4, TF4, TB4, k2, p2, k2, p4, TB4, TF4, p2 twice, k2. K the k sts and p the p sts as they face you. K2, p6, * CF4, TB4, p2, TF4, TB4, p4, TF4 *, p2, rep once more, end k2. K2, p6, * k2, CB4, p6, CB4, p8, k2 *, p2, rep between *s once more, end k2. K2, p6, * CF4, TF4, p2, TB4, TF4, p4, TB4 *, p2, rep between *s once more, end k2. K2, p4, TB4, TF4, k2, p2, k2, p4, TF4, TB4, p2 twice, k2. K2, p2, TB4, p4, CB4, p2, TF4, p4, CB4, p2 twice, p2, k2. K2, p2, k2, p4, TB4, TF4, p2, TF4, TB4, k2, p2 twice, p2, k2. K2, p2, TF4, TB4, p4, TF4, p2, CF4, TB4, p2 twice, p2, k2. K2, p4, CF4, p8, k2, p2, k2, CB4, p6 twice, k2. K2, p2, TB4, TF4, p4, TB4, p2, CF4, TF4, p2 twice, p2, k2. K2, p2, k2, p4, TF4, TB4, p2, TB4, TF4, k2, p2 twice, p2, k2. K2, p2, TF4, p4, CB4, p2, TB4, p4, CB4, p2 twice, p2, k2.]]',
 				'width': '467px',
                 'position': {'x': '25%', 'y': '100px'}
                 }
@@ -1989,7 +2007,7 @@ rules = {
                 'next': 'latlong',
                 'content': 'longitude.jpg',
 				'width': '100%',
-                'position': {'x': '0%', 'y': '60px'}
+                'position': {'x': '0%', 'y': '55px'}
                 }
 	],
 		
@@ -2005,7 +2023,7 @@ rules = {
 		'chad': [
                 {
                 'type': 'image',
-                'next': 'chad',
+                'next': 'over_humps',
                 'content': 'ch.jpg',
                 'position': {'x': '20%', 'y': '25%'}
                 }
@@ -2089,8 +2107,266 @@ rules = {
                 'position': {'x': '0%', 'y': '0%'}
                 }
 	],
-
-
+		'sheet2': [
+                {
+                'type': 'image',
+                'next': 'yes',
+                'content': 'sheet2.jpg',
+                'position': {'x': '10px', 'y': '15%'}
+                }
+	],
+		'satin_sweater': [
+                {
+                'type': 'image',
+                'next': 'hair',
+                'content': 'sweater2.jpg',
+                'position': {'x': '10%', 'y': '25%'}
+                },
+				{
+                'type': 'image',
+                'next': 'cushion2',
+                'content': 'satin2.jpg',
+                'position': {'x': '50%', 'y': '25%'}
+                }
+	],
+		'chad2': [
+                {
+                'type': 'image',
+                'next': '24nights',
+                'content': 'ch.jpg',
+                'position': {'x': '5%', 'y': '15%'}
+                }
+	],
+		'emergency': [
+                {
+                'type': 'image',
+                'next': 'uta_snowed',
+                'content': 'emergency.jpg',
+                'position': {'x': '5%', 'y': '10%'}
+                }
+	],
+		'yolk2': [
+                {
+                'type': 'image',
+                'next': 'tree2',
+                'content': 'yolk.jpg',
+                'position': {'x': '20%', 'y': '5%'}
+                }
+	],
+		'yolk3': [
+                {
+                'type': 'image',
+                'next': 'thelongest',
+                'content': 'yolk.jpg',
+                'position': {'x': '20%', 'y': '5%'}
+                }
+	],
+		
+		'ceiling1': [
+                {
+                'type': 'image',
+                'next': 'ceiling2',
+                'content': 'ceiling1.jpg',
+                'position': {'x': '10%', 'y': '10%'}
+                }
+	],
+	
+		'ceiling2': [
+                {
+                'type': 'image',
+                'next': 'ceiling3',
+                'content': 'ceiling2.jpg',
+                'position': {'x': '10%', 'y': '10%'}
+                }
+	],
+		'ceiling3': [
+                {
+                'type': 'image',
+                'next': 'ground2',
+                'content': 'ceiling3.jpg',
+                'position': {'x': '10%', 'y': '10%'}
+                }
+	],
+		'ground2': [
+                {
+                'type': 'image',
+                'next': 'ground3',
+                'content': 'doorway2.jpg',
+                'position': {'x': '9%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'ground3',
+                'content': 'ground2.jpg',
+                'position': {'x': '51%', 'y': '15%'}
+                }
+	],
+		'ground3': [
+                {
+                'type': 'image',
+                'next': 'ground4',
+                'content': 'fulcrum2.jpg',
+                'position': {'x': '9%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'ground4',
+                'content': 'ground2.jpg',
+                'position': {'x': '51%', 'y': '15%'}
+                }
+	],
+		'ground4': [
+                {
+                'type': 'image',
+                'next': 'ground5',
+                'content': 'fulcrum2.jpg',
+                'position': {'x': '9%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'ground5',
+                'content': 'train.jpg',
+                'position': {'x': '51%', 'y': '15%'}
+                }
+	],
+		'ground5': [
+                {
+                'type': 'image',
+                'next': 'moment_sheet',
+                'content': 'rightangle.jpg',
+                'position': {'x': '9%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'pressurepleasure',
+                'content': 'train.jpg',
+                'position': {'x': '51%', 'y': '15%'}
+                }
+	],
+		'colordots': [
+                {
+                'type': 'image',
+                'next': 'sign',
+                'content': 'colordot1.jpg',
+                'position': {'x': '10%', 'y': '75%'}
+                },
+				{
+                'type': 'image',
+                'next': 'devotion3',
+                'content': 'colordot2.jpg',
+                'position': {'x': '30%', 'y': '50%'}
+                },
+				{
+                'type': 'image',
+                'next': 'yes2',
+                'content': 'colordot3.jpg',
+                'position': {'x': '55%', 'y': '60%'}
+                },
+				{
+                'type': 'image',
+                'next': 'OH_wall_arm_web',
+                'content': 'colordot4.jpg',
+                'position': {'x': '15%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'misc',
+                'content': 'colordot5.jpg',
+                'position': {'x': '80%', 'y': '45%'}
+                },
+				{
+                'type': 'image',
+                'next': 'intobed',
+                'content': 'colordot6.jpg',
+                'position': {'x': '60%', 'y': '10%'}
+                }
+	],
+		'yes2': [
+                {
+                'type': 'image',
+                'next': 'proximity',
+                'content': 'satin.jpg',
+                'position': {'x': '55%', 'y': '52%'}
+                },
+				{
+                'type': 'image',
+                'next': 'mushroom',
+                'content': 'ocean.jpg',
+                'position': {'x': '8%', 'y': '10%'}
+	            }
+	],
+		'OH_wall_arm_web': [
+                {
+                'type': 'image',
+                'next': 'destination',
+                'content': 'OH2.jpg',
+                'position': {'x': '15%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'icecream',
+                'content': 'arm2.jpg',
+                'position': {'x': '15%', 'y': '50%'}
+                },
+				{
+                'type': 'image',
+                'next': 'ah',
+                'content': 'wall2.jpg',
+                'position': {'x': '55%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'mushroom',
+                'content': 'web2.jpg',
+                'position': {'x': '55%', 'y': '50%'}
+                }
+	],
+		'hair2': [
+                {
+                'type': 'image',
+                'next': 'yes',
+                'content': 'hair2.jpg',
+                'position': {'x': '10%', 'y': '10%'}
+                }
+	],
+		'sign': [
+                {
+                'type': 'image',
+                'next': 'knitting',
+                'content': 'sign.jpg',
+                'position': {'x': '12%', 'y': '12%'}
+                }
+	],
+		'x': [
+                {
+                'type': 'image',
+                'next': 'uta_snowed',
+                'content': 'x2.jpg',
+                'position': {'x': '35%', 'y': '8%'}
+                }
+	],
+		'brighter': [
+                {
+                'type': 'image',
+                'next': 'sand',
+                'content': 'brighter.jpg',
+                'position': {'x': '12%', 'y': '5%'}
+                }
+	],
+		'bent': [
+                {
+                'type': 'image',
+                'next': 'light_reliance',
+                'content': 'bentlight.jpg',
+                'position': {'x': '9%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'hairdown',
+                'content': 'bentbody.jpg',
+                'position': {'x': '51%', 'y': '15%'}
+                }
+	],
 }
 
 
