@@ -1,0 +1,5 @@
+div {padding:10px;}
+a{clear:left;float:left;}
+.open {color:green;font-weight:bold;}
+.closed {color:red;}
+.closed + div {display: none;}

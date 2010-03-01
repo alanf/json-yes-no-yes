@@ -2,24 +2,7 @@ var $ = goog.dom.$;
 var $$ = goog.dom.$$;
 
 main = function (node, visited, depth) {
-	var tree = rules[node];
-	var branches = [];
-	goog.array.forEach(tree, function (child) {
-		if (child['type'] == 'image') {
-			goog.array.insert(branches, child['next']);
-		} else if (child['type'] == 'text') {
-			goog.array.insert(branches, child['next']);
-
-			var text = child['content'].split(']]');
-			goog.array.forEach(text, function(fragment) {
-				if (fragment.split('[[').length > 1) {
-					var link_content =  fragment.split('[[')[1].split('|');
-					var href = link_content[0];
-					goog.array.insert(branches, href);
-				}
-			});
-		}
-	});
+	children = get_children(node);
 	var padding = ' - ' + goog.string.repeat(" . ", depth);
 
 	$('main-body').appendChild(goog.dom.createTextNode(padding));
@@ -29,7 +12,7 @@ main = function (node, visited, depth) {
 	$('main-body').appendChild(goog.dom.createDom('br'));
 
 	visited_copy = goog.array.clone(visited);
-	goog.array.forEach(branches, function(branch) {
+	goog.array.forEach(children, function(branch) {
 		if (branch) {
 			if (!goog.array.contains(visited_copy, branch)) {
 				goog.array.insert(visited_copy, branch);
@@ -39,7 +22,67 @@ main = function (node, visited, depth) {
 	});
 };
 
-main('start', [], 0);
+main2 = function(name){
+	var children = get_children(name);
+	var container = goog.dom.createDom('div');
+
+	$('main-body').appendChild(container);
+	goog.array.forEach(children, function(child) {
+		var link = goog.dom.createDom('a', {'href': '', 'id': 'report-'+ name +'-'+child}, child);
+		container.appendChild(link);
+		//container.appendChild(goog.dom.createDom('br'));
+		goog.events.listen(link, goog.events.EventType.CLICK, show_children, false, this);
+	});
+};
+
+show_children = function(event) {
+	event.preventDefault();
+	if (goog.string.contains(event.target.className, 'open')) {
+		goog.dom.setProperties(event.target, {'class': 'closed'});
+	} else if (goog.string.contains(event.target.className, 'closed')) {
+		goog.dom.setProperties(event.target, {'class': 'open'});
+	} else {
+		var name = event.target.id.split('-')[2];
+		var children = get_children(name);
+		var container = goog.dom.createDom('div');
+
+		goog.dom.insertSiblingAfter(container, event.target);
+		goog.array.forEach(children, function(child) {
+			if (child) {
+				var link = goog.dom.createDom('a', {'href': '', 'id': 'report-'+ name +'-'+child}, child);
+				container.appendChild(link);
+				//container.appendChild(goog.dom.createDom('br'));
+				goog.events.listen(link, goog.events.EventType.CLICK, show_children, false, this);
+			}
+		});
+		goog.dom.setProperties(event.target, {'class': 'open'});
+	}
+};
+
+get_children = function (node) {
+	var tree = rules[node];
+	var children = [];
+	goog.array.forEach(tree, function (child) {
+		if (child['type'] == 'image') {
+			goog.array.insert(children, child['next']);
+		} else if (child['type'] == 'text') {
+			goog.array.insert(children, child['next']);
+
+			var text = child['content'].split(']]');
+			goog.array.forEach(text, function(fragment) {
+				if (fragment.split('[[').length > 1) {
+					var link_content =  fragment.split('[[')[1].split('|');
+					var href = link_content[0];
+					goog.array.insert(children, href);
+				}
+			});
+		}
+	});
+	return children;
+};
+
+//main('start', [], 0);
+main2('init');
 			
 
 	
