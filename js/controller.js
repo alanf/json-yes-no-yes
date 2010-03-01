@@ -6,13 +6,16 @@ var $$ = goog.dom.$$;
 
 main_action = function(event) {
 	event.preventDefault();
-	// delete everything from the page
-	goog.dom.removeChildren($('main-body'));	
-
 	// the previous and next targets
 	var prev = event.target.id.split('-')[1];
 	var name = event.target.id.split('-')[2];
 	var new_rules = rules[name];
+	if (!new_rules) {
+		return;
+	}
+
+	// delete everything from the page
+	goog.dom.removeChildren($('main-body'));	
 
 	// these counter variables keep our ids unique
 	var i = 0;
