@@ -2242,7 +2242,7 @@ rules = {
                 'type': 'text',
                 'content': 'configuration',
 				'next': 'terms6',
-				'color': 'black'
+				'color': 'black',
                 'position': {'x': '66%', 'y': '30%'}
                 },
 				{
@@ -3421,13 +3421,13 @@ rules = {
                 'type': 'image',
                 'next': 'destination',
                 'content': 'garlic.jpg',
-                'position': {'x': '25%', 'y': '28%'}
+                'position': {'x': '46%', 'y': '0%'}
                 },
 				{
                 'type': 'image',
                 'next': 'garage_arm',
                 'content': 'bd.jpg',
-                'position': {'x': '35%', 'y': '28%'}
+                'position': {'x': '65%', 'y': '48%'}
                 }
 	],
 		
