@@ -65,6 +65,7 @@ main_action = function(event) {
 				'type': 'video/quicktime'}
 			);
 			new_element.appendChild(goog.dom.createDom('param', {'value': false, 'name': 'controller'}));
+			new_element.appendChild(goog.dom.createDom('param', {'value': true, 'name': 'autoplay'}));
 			goog.events.listen(new_element, goog.events.EventType.CLICK, main_action, false, this);
 		}
 
