@@ -3,6 +3,7 @@ a {color:#4F4F4F;text-decoration:none;}
 .hidden {display: none;}
 p {position: absolute;}
 img {position: absolute;cursor: pointer;}
+object {padding: none;}
 #start, #image-init-start-0 {width: 250px; margin-left: auto; margin-right: auto;margin-top:180px;}
 #home-start-start{bottom: 5%; left: 92%; position: absolute;}
 #debug-input{bottom: 5%; right: 180px; position: absolute;}

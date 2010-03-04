@@ -56,6 +56,16 @@ main_action = function(event) {
 				}
 			});
 			j += 1;
+		} else if (rule['type'] == 'video') {
+			new_element = goog.dom.createDom('object', {
+				'id': 'video'+'-'+name+'-'+rule['next']+'-'+j,
+				'width': rule['width'],
+				'height': rule['height'],
+				'data': 'video/' + rule['content'],
+				'type': 'video/quicktime'}
+			);
+			new_element.appendChild(goog.dom.createDom('param', {'value': false, 'name': 'controller'}));
+			goog.events.listen(new_element, goog.events.EventType.CLICK, main_action, false, this);
 		}
 
 		// set all the inline style properties.

@@ -7,6 +7,14 @@ rules = {
                 }
 			],
     'start': [
+				{
+				'type': 'video',
+				'next': 'destination',
+				'content': 'youcantleaveitbehind.mov',
+				'width': '450',
+				'height': '300',
+                'position': {'x': '21%', 'y': '10%'}
+				},
                 {
                 'type': 'image',
                 'next': 'second_paper',
