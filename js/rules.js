@@ -154,26 +154,6 @@ rules = {
                 'position': {'x': '25%', 'y': '8%'}
                 }
 		],
-	'twelveth': [
-                {
-                'type': 'image',
-                'next': 'start',
-                'content': 'page8_img1.jpg',
-                'position': {'x': '50%', 'y': '45%'}
-                },
-                {
-                'type': 'image',
-                'next': 'story',
-                'content': 'page8_img2.jpg',
-                'position': {'x': '10%', 'y': '50%'}
-                },
-                {
-                'type': 'image',
-                'next': 'start',
-                'content': 'page8_img3.jpg',
-                'position': {'x': '38%', 'y': '10%'}
-                }
-	],
 	'thirteenth_uta': [
                 {
                 'type': 'image',
@@ -908,6 +888,12 @@ rules = {
                 'content': '[[portland_slice|past]] [[brighter|future]] [[past_future|selves]]',
 				'width': '40px',
                 'position': {'x': '50px', 'y': '370px'}
+                },
+				{
+                'type': 'image',
+                'next': 'vent',
+                'content': 'pillow.jpg',
+                'position': {'x': '40%', 'y': '10%'}
                 }
 	],
 				'tree1': [
@@ -1002,7 +988,7 @@ rules = {
                 'type': 'image',
                 'next': 'sand',
                 'content': 'invisible.jpg',
-                'position': {'x': '40%', 'y': '40%'}
+                'position': {'x': '45%', 'y': '45%'}
                 }
 	],
 				'wall': [
@@ -2762,7 +2748,13 @@ rules = {
                 'type': 'image',
                 'next': 'bodies5',
                 'content': 'hair_down.jpg',
-                'position': {'x': '15%', 'y': '30%'}
+                'position': {'x': '5%', 'y': '40%'}
+                },
+				{
+                'type': 'image',
+                'next': 'coordinates',
+                'content': 'carpet.jpg',
+                'position': {'x': '45%', 'y': '10%'}
                 }
 	],
 		'window': [
@@ -2778,7 +2770,13 @@ rules = {
                 'type': 'image',
                 'next': 'twoways',
                 'content': 'soles.jpg',
-                'position': {'x': '20%', 'y': '35%'}
+                'position': {'x': '5%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'sign',
+                'content': 'grass.jpg',
+                'position': {'x': '55%', 'y': '5%'}
                 }
 	],
 		'sand': [			
@@ -3347,7 +3345,7 @@ rules = {
                 'type': 'image',
                 'next': 'apple',
                 'content': 'window.jpg',
-                'position': {'x': '10%', 'y': '36%'}
+                'position': {'x': '10%', 'y': '38%'}
                 },
 				{
                 'type': 'image',
@@ -3362,6 +3360,12 @@ rules = {
                 'next': 'entropy',
                 'content': 'oil.jpg',
                 'position': {'x': '10%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'entropy',
+                'content': 'cabbage.jpg',
+                'position': {'x': '60%', 'y': '37%'}
                 }
 	],
 		'yolk4': [
