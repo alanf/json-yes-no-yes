@@ -26,6 +26,10 @@ var reset_timer = null;
 var RESET_DURATION = 60000; //ms
 
 show_page = function(name, prev, from_redirect) {
+	var new_rules = rules[name];
+	if (!new_rules) {
+		return;
+	};
 	if (from_redirect) {
 		// only redirect the user once
 		clearTimeout(redirect_timer);
@@ -46,12 +50,6 @@ show_page = function(name, prev, from_redirect) {
 			redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
 		}
 	}
-
-	var new_rules = rules[name];
-	if (!new_rules) {
-		return;
-	};
-		
 	// delete everything from the page
 	goog.dom.removeChildren($('main-body'));	
 
