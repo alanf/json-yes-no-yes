@@ -136,7 +136,7 @@ show_page = function(name, prev, from_redirect) {
 	$('main-body').appendChild(debug_input);	
 	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
 	//set up a timer to show a random page
-	if (!timer) {
+	if (!timer && name != 'start') {
 		var random_page;
 		var keys = goog.object.getKeys(rules);
 		while (!random_page || random_page == 'init' || random_page == 'start') {
