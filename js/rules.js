@@ -222,26 +222,6 @@ rules = {
                 'position': {'x': '5%', 'y': '359px'}
                 }
 	],
-	'fifteenth_fulcrum': [
-                {
-                'type': 'image',
-                'next': 'proximity',
-                'content': 'page8_img3.jpg',
-                'position': {'x': '455px', 'y': '8%'}
-                },			
-				{
-                'type': 'image',
-                'next': 'story',
-                'content': 'page8_img2.jpg',
-                'position': {'x': '5%', 'y': '409px'}
-                },
-				{
-                'type': 'image',
-                'next': 'lucky_apple_OH',
-                'content': 'page8_img1.jpg',
-                'position': {'x': '45%', 'y': '409px'}
-                }
-	],
 	'proximity': [
                 {
                 'type': 'image',
@@ -262,26 +242,6 @@ rules = {
                 'next': 'lucky_devotion5',
                 'content': 'sheet.jpg',
                 'position': {'x': '86px', 'y': '325px'}
-                }
-	],
-	'lucky_apple_OH': [
-                {
-                'type': 'image',
-                'next': 'icecream',
-                'content': 'lucky.jpg',
-                'position': {'x': '25%', 'y': '150px'}
-                },			
-				{
-                'type': 'image',
-                'next': 'hair2',
-                'content': 'apple.jpg',
-                'position': {'x': '25%', 'y': '600px'}
-                },
-				{
-                'type': 'image',
-                'next': 'start',
-                'content': 'OH.jpg',
-                'position': {'x': '25%', 'y': '1050px'}
                 }
 	],
 	'everythingiseverything': [
@@ -419,7 +379,13 @@ rules = {
                 'type': 'image',
                 'next': 'everythingiseverything',
                 'content': 'OH.jpg',
-                'position': {'x': '25%', 'y': '6%'}
+                'position': {'x': '40%', 'y': '6%'}
+                },
+				{
+                'type': 'image',
+                'next': 'entropy',
+                'content': 'humps2.jpg',
+                'position': {'x': '5%', 'y': '56%'}
                 }
 	],
 	'lucky_devotion5': [
@@ -475,7 +441,7 @@ rules = {
 	'youthink': [
                 {
                 'type': 'image',
-                'next': 'landsandsky',
+                'next': 'moons',
                 'content': 'youthink.jpg',
                 'position': {'x': '20%', 'y': '12%'}
                 }
@@ -514,7 +480,7 @@ rules = {
 			'toe': [
                 {
                 'type': 'image',
-                'next': 'hair',
+                'next': '2_1',
                 'content': 'toe.jpg',
                 'position': {'x': '15%', 'y': '8%'}
                 }
@@ -762,21 +728,7 @@ rules = {
                 'position': {'x': '20%', 'y': '15%'}
                 }
 	],
-				'exercisesin': [
-				{
-                'type': 'image',
-                'next': 'start',
-                'content': 'wisdom.jpg',
-                'position': {'x': '15%', 'y': '150px'}
-                },
-				{
-                'type': 'image',
-                'next': 'exercisesin',
-                'content': 'exercises.jpg',
-                'position': {'x': '45%', 'y': '600px'}
-                }
-	],
-				'24nights': [
+			'24nights': [
 				{
                 'type': 'image',
                 'next': 'devotion3',
@@ -807,7 +759,13 @@ rules = {
                 'type': 'image',
                 'next': 'emergencybed',
                 'content': 'devotion3.jpg',
-                'position': {'x': '10%', 'y': '3%'}
+                'position': {'x': '10%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'portland_slice',
+                'content': 'corner.jpg',
+                'position': {'x': '65%', 'y': '30%'}
                 }
 	],
 				'hermann': [
@@ -876,7 +834,15 @@ rules = {
                 'next': 'devotion5',
                 'content': '2_1.jpg',
                 'position': {'x': '45%', 'y': '30%'}
-                }
+                },
+				{
+				'type': 'video',
+				'next': 'focus_light',
+				'content': 'curtains.mov',
+				'width': '400',
+				'height': '300',
+                'position': {'x': '5%', 'y': '5%'}
+				}
 	],
 				'light_reliance': [
 				{
@@ -919,7 +885,13 @@ rules = {
                 'type': 'image',
                 'next': 'lucky_devotion5',
                 'content': 'devotion5.jpg',
-                'position': {'x': '40%', 'y': '10%'}
+                'position': {'x': '50%', 'y': '5%'}
+                },
+				{
+                'type': 'image',
+                'next': 'antenna',
+                'content': 'henry.jpg',
+                'position': {'x': '5%', 'y': '50%'}
                 }
 	],
 				'twotrees': [
@@ -1036,10 +1008,18 @@ rules = {
 				'wall': [
                 {
                 'type': 'image',
-                'next': 'uta_snowed',
+                'next': 'second_paper',
                 'content': 'wall.jpg',
-                'position': {'x': '25%', 'y': '20%'}
-                }
+                'position': {'x': '55%', 'y': '35%'}
+                },
+				{
+				'type': 'video',
+				'next': 'mushroom',
+				'content': 'sparks.mov',
+				'width': '300',
+				'height': '200',
+                'position': {'x': '15%', 'y': '35%'}
+				}
 	],
 				'vent': [
                 {
@@ -3031,7 +3011,13 @@ rules = {
                 'type': 'image',
                 'next': 'yes',
                 'content': 'sheet2.jpg',
-                'position': {'x': '10px', 'y': '15%'}
+                'position': {'x': '40%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'misc',
+                'content': 'cube2.jpg',
+                'position': {'x': '5%', 'y': '60%'}
                 }
 	],
 		'satin_sweater': [
@@ -3265,9 +3251,15 @@ rules = {
 		'x': [
                 {
                 'type': 'image',
-                'next': 'uta_snowed',
+                'next': 'chad',
                 'content': 'x2.jpg',
-                'position': {'x': '35%', 'y': '8%'}
+                'position': {'x': '45%', 'y': '48%'}
+                },
+				{
+                'type': 'image',
+                'next': 'knitting',
+                'content': 'rat.jpg',
+                'position': {'x': '5%', 'y': '10%'}
                 }
 	],
 		'brighter': [
@@ -3303,13 +3295,13 @@ rules = {
 		'seaclouds2': [
 				{
                 'type': 'image',
-                'next': 'ground',
+                'next': 'gestalt',
                 'content': 'seaclouds.jpg',
                 'position': {'x': '180px', 'y': '80px'}
                 },
 				{
                 'type': 'image',
-                'next': 'wind',
+                'next': 'colordots',
                 'content': 'clouds.jpg',
                 'position': {'x': '726px', 'y': '280px'}
                 }
@@ -3317,19 +3309,19 @@ rules = {
 		'skysandland': [
                 {
                 'type': 'image',
-                'next': 'OH',
+                'next': 'moment2',
                 'content': 'sky.jpg',
                 'position': {'x': '10%', 'y': '35%'}
                 },			
 				{
                 'type': 'image',
-                'next': 'bodies',
+                'next': 'drawers',
                 'content': 'sand.jpg',
                 'position': {'x': '37%', 'y': '35%'}
                 },
 				{
                 'type': 'image',
-                'next': 'emergency',
+                'next': 'chad',
                 'content': 'land.jpg',
                 'position': {'x': '60%', 'y': '35%'}
                 }
@@ -3364,34 +3356,12 @@ rules = {
                 'position': {'x': '45%', 'y': '5%'}
                 }
 	],
-		'bodies6': [
-                {
-				'type': 'video',
-				'next': 'destination',
-				'content': 'youcantleaveitbehind.mov',
-				'width': '450',
-				'height': '300',
-                'position': {'x': '21%', 'y': '10%'}
-				},
-				{
-                'type': 'image',
-                'next': 'only2',
-                'content': 'guitar.jpg',
-                'position': {'x': '45%', 'y': '5%'}
-                }
-	],
 		'oils': [
                 {
                 'type': 'image',
-                'next': 'yolk4',
+                'next': 'entropy',
                 'content': 'oil.jpg',
                 'position': {'x': '10%', 'y': '10%'}
-                },
-				{
-                'type': 'image',
-                'next': 'bent',
-                'content': 'helpyourself.jpg',
-                'position': {'x': '45%', 'y': '46%'}
                 }
 	],
 		'yolk4': [
@@ -3405,7 +3375,7 @@ rules = {
 		'tree3': [
                 {
                 'type': 'image',
-                'next': 'rocks_garlic_bd',
+                'next': 'rocks_bd',
                 'content': 'tree2.jpg',
                 'position': {'x': '15%', 'y': '28%'}
                 }
@@ -3428,6 +3398,45 @@ rules = {
                 'next': 'garage_arm',
                 'content': 'bd.jpg',
                 'position': {'x': '65%', 'y': '48%'}
+                }
+	],
+		'entropy': [
+                {
+				'type': 'video',
+				'next': 'destination',
+				'content': 'entropy.mov',
+				'width': '300',
+				'height': '200',
+                'position': {'x': '21%', 'y': '10%'}
+				},
+				{
+                'type': 'image',
+                'next': 'rocks_garlic_bd',
+                'content': 'incense3.jpg',
+                'position': {'x': '55%', 'y': '48%'}
+                }
+	],
+		'rocks_bd': [
+                {
+                'type': 'image',
+                'next': 'tree1',
+                'content': 'rocks.jpg',
+                'position': {'x': '45%', 'y': '25%'}
+                },
+				{
+                'type': 'image',
+                'next': 'reliance',
+                'content': 'bd.jpg',
+                'position': {'x': '15%', 'y': '25%'}
+                }
+	],
+		'reliance': [
+                {
+                'type': 'image',
+                'next': 'circles',
+				'width': '100%',
+                'content': 'reliance2.jpg',
+                'position': {'x': '0%', 'y': '0%'}
                 }
 	],
 		
