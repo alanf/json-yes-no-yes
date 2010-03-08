@@ -4,16 +4,47 @@
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
 
+get_rules_from_id = function(id) {
+	var prev = id.split('-')[1];
+	var name = id.split('-')[2];
+	return {
+		'prev': prev,
+		'name': name
+	};
+};
+
 main_action = function(event) {
 	event.preventDefault();
-	// the previous and next targets
-	var prev = event.target.id.split('-')[1];
-	var name = event.target.id.split('-')[2];
+	rules_dict = get_rules_from_id(event.target.id);
+	show_page(rules_dict.name, rules_dict.prev);
+};
+
+// rules for automatically redirecting to a random page
+var timer = null;
+var autoredirect_count = 0;
+var AUTO_REDIRECT_LIMIT = 12; //12;
+var AUTO_REDIRECT_DURATION = 5000; //ms
+
+show_page = function(name, prev, from_redirect) {
+	// special redirect rules
+	if (from_redirect) {
+		autoredirect_count += 1;
+		if (autoredirect_count == AUTO_REDIRECT_LIMIT + 1) {
+			name = 'start';
+			autoredirect_count = 0;
+		}
+	} else {
+		autoredirect_count = 0;
+	}
+
 	var new_rules = rules[name];
 	if (!new_rules) {
 		return;
-	}
-
+	};
+		
+	if (timer) {
+		clearTimeout(timer);
+	};
 	// delete everything from the page
 	goog.dom.removeChildren($('main-body'));	
 
@@ -104,6 +135,14 @@ main_action = function(event) {
 	var debug_input = goog.dom.createDom('input', {'type': 'text', 'id': 'debug-input'});
 	$('main-body').appendChild(debug_input);	
 	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
+	//set up a timer to show a random page
+	var random_page;
+	var keys = goog.object.getKeys(rules);
+	while (!random_page || random_page == 'init' || random_page == 'start') {
+		random_page = keys[Math.floor(Math.random()*keys.length)]
+	};
+	var statement = 'show_page("' + random_page + '", "' + name + '", true)';
+	timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
 };
 
 alter_debug_jump_link = function(event) {
