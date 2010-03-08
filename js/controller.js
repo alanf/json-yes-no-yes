@@ -45,7 +45,7 @@ show_page = function(name, prev, from_redirect) {
 		if(!redirect_timer && !never_come_from[name]) {
 			var random_page;
 			var keys = goog.object.getKeys(rules);
-			while (!random_page || !never_go_to[random_page]) {
+			while (!random_page || never_go_to[random_page]) {
 				random_page = keys[Math.floor(Math.random()*keys.length)]
 			};
 			statement = 'show_page("' + random_page + '", "' + prev + '", true)';
