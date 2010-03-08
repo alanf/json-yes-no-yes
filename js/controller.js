@@ -20,24 +20,31 @@ main_action = function(event) {
 };
 
 // rules for automatically redirecting to a random page
-var timer = null;
-var autoredirect_count = 0;
-var AUTO_REDIRECT_LIMIT = 12; //12;
+var redirect_timer = null;
 var AUTO_REDIRECT_DURATION = 5000; //ms
+var reset_timer = null;
+var RESET_DURATION = 60000; //ms
 
 show_page = function(name, prev, from_redirect) {
-	// special redirect rules
 	if (from_redirect) {
-		autoredirect_count += 1;
-		if (autoredirect_count == AUTO_REDIRECT_LIMIT + 1) {
-			name = 'start';
-			autoredirect_count = 0;
-		}
-		clearTimeout(timer);
-		timer = null;
+		// only redirect the user once
+		clearTimeout(redirect_timer);
+		redirect_timer = null;
 	} else {
-		// we got here from a user action
-		autoredirect_count = 0;
+		// this timer resets to the first page if there's no activity for a minute
+		clearTimeout(reset_timer);
+		var statement = 'show_page("start", "' + name + '", false)';
+		reset_timer = setTimeout(statement, RESET_DURATION);
+		// this timer will redirect to a ranom page 5 seconds after the user clicks something
+		if(!redirect_timer && name != 'start') {
+			var random_page;
+			var keys = goog.object.getKeys(rules);
+			while (!random_page || random_page == 'init' || random_page == 'start') {
+				random_page = keys[Math.floor(Math.random()*keys.length)]
+			};
+			statement = 'show_page("' + random_page + '", "' + name + '", true)';
+			redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
+		}
 	}
 
 	var new_rules = rules[name];
@@ -135,16 +142,16 @@ show_page = function(name, prev, from_redirect) {
 	var debug_input = goog.dom.createDom('input', {'type': 'text', 'id': 'debug-input'});
 	$('main-body').appendChild(debug_input);	
 	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
-	//set up a timer to show a random page
-	if (!timer && name != 'start') {
+	//set up a timer to show a random page after the user has clicked something
+	if (!from_redirect && name != 'start') {
 		var random_page;
 		var keys = goog.object.getKeys(rules);
 		while (!random_page || random_page == 'init' || random_page == 'start') {
 			random_page = keys[Math.floor(Math.random()*keys.length)]
 		};
 		var statement = 'show_page("' + random_page + '", "' + name + '", true)';
-		timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
-	}
+		redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
+	} 
 };
 
 alter_debug_jump_link = function(event) {
