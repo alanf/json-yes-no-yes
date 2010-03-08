@@ -33,6 +33,8 @@ show_page = function(name, prev, from_redirect) {
 			name = 'start';
 			autoredirect_count = 0;
 		}
+		clearTimeout(timer);
+		timer = null;
 	} else {
 		autoredirect_count = 0;
 	}
@@ -42,9 +44,6 @@ show_page = function(name, prev, from_redirect) {
 		return;
 	};
 		
-	if (timer) {
-		clearTimeout(timer);
-	};
 	// delete everything from the page
 	goog.dom.removeChildren($('main-body'));	
 
@@ -136,13 +135,15 @@ show_page = function(name, prev, from_redirect) {
 	$('main-body').appendChild(debug_input);	
 	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
 	//set up a timer to show a random page
-	var random_page;
-	var keys = goog.object.getKeys(rules);
-	while (!random_page || random_page == 'init' || random_page == 'start') {
-		random_page = keys[Math.floor(Math.random()*keys.length)]
-	};
-	var statement = 'show_page("' + random_page + '", "' + name + '", true)';
-	timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
+	if (!timer) {
+		var random_page;
+		var keys = goog.object.getKeys(rules);
+		while (!random_page || random_page == 'init' || random_page == 'start') {
+			random_page = keys[Math.floor(Math.random()*keys.length)]
+		};
+		var statement = 'show_page("' + random_page + '", "' + name + '", true)';
+		timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
+	}
 };
 
 alter_debug_jump_link = function(event) {
