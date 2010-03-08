@@ -36,6 +36,7 @@ show_page = function(name, prev, from_redirect) {
 		clearTimeout(timer);
 		timer = null;
 	} else {
+		// we got here from a user action
 		autoredirect_count = 0;
 	}
 
