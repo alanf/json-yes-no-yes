@@ -37,8 +37,10 @@ show_page = function(name, prev, from_redirect) {
 	} else {
 		// this timer resets to the first page if there's no activity for a minute
 		clearTimeout(reset_timer);
-		var statement = 'show_page("start", "' + name + '", false)';
-		reset_timer = setTimeout(statement, RESET_DURATION);
+		if (name != 'start') {
+			var statement = 'show_page("start", "' + name + '", false)';
+			reset_timer = setTimeout(statement, RESET_DURATION);
+		}
 		// this timer will redirect to a ranom page 5 seconds after the user clicks something
 		if(!redirect_timer && name != 'start') {
 			var random_page;
