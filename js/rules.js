@@ -3450,13 +3450,14 @@ rules = {
 
 
 never_come_from = {
-	'reliance': true,
+	'entropy': true,
+	'2_1': true,
+	'wall': true,
 	'start': true,
 	'init': true
 }
 
 never_go_to = {
-	'rocks_bd': true,
 	'start': true,
 	'init': true
 }
