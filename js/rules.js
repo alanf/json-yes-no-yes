@@ -3445,3 +3445,12 @@ rules = {
 ;
 
 
+never_come_from = {
+	'start': true,
+	'init': true
+}
+
+never_go_to = {
+	'start': true,
+	'init': true
+}

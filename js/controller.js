@@ -37,18 +37,18 @@ show_page = function(name, prev, from_redirect) {
 	} else {
 		// this timer resets to the first page if there's no activity for a minute
 		clearTimeout(reset_timer);
-		if (name != 'start') {
-			var statement = 'show_page("start", "' + name + '", false)';
+		if (!never_come_from[name]) {
+			var statement = 'show_page("start", "' + prev + '", false)';
 			reset_timer = setTimeout(statement, RESET_DURATION);
 		}
 		// this timer will redirect to a ranom page 5 seconds after the user clicks something
-		if(!redirect_timer && name != 'start') {
+		if(!redirect_timer && !never_come_from[name]) {
 			var random_page;
 			var keys = goog.object.getKeys(rules);
-			while (!random_page || random_page == 'init' || random_page == 'start') {
+			while (!random_page || !never_go_to[random_page]) {
 				random_page = keys[Math.floor(Math.random()*keys.length)]
 			};
-			statement = 'show_page("' + random_page + '", "' + name + '", true)';
+			statement = 'show_page("' + random_page + '", "' + prev + '", true)';
 			redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
 		}
 	}
