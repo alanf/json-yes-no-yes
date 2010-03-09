@@ -34,10 +34,17 @@ class AnalyzeHandler(webapp.RequestHandler):
 		path = os.path.join(os.path.dirname(__file__), 'templates', 'analyze.html')
 		self.response.out.write(template.render(path, {}))
 
+class GhsHandler(webapp.RequestHandler):
+
+	def get(self):
+		path = os.path.join(os.path.dirname(__file__), 'templates', 'ghs.html')
+		self.response.out.write(template.render(path, {}))
+
 def main():
 	application = webapp.WSGIApplication([
 		('/', MainHandler),
 		('/analyze', AnalyzeHandler),
+		('/googlehostedservice.html', GhsHandler),
 	], debug=False)
 	util.run_wsgi_app(application)
 
