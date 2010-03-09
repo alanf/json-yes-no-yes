@@ -21,7 +21,7 @@ main_action = function(event) {
 
 // rules for automatically redirecting to a random page
 var redirect_timer = null;
-var AUTO_REDIRECT_DURATION = 5000; //ms
+var AUTO_REDIRECT_DURATION = 3000; //ms
 var reset_timer = null;
 var RESET_DURATION = 60000; //ms
 
@@ -30,19 +30,15 @@ show_page = function(name, prev, from_redirect) {
 	if (!new_rules) {
 		return;
 	};
-	if (from_redirect) {
-		// only redirect the user once
-		clearTimeout(redirect_timer);
-		redirect_timer = null;
-	} else {
-		// this timer resets to the first page if there's no activity for a minute
-		clearTimeout(reset_timer);
-		if (!never_come_from[name]) {
-			var statement = 'show_page("start", "' + prev + '", false)';
-			reset_timer = setTimeout(statement, RESET_DURATION);
-		}
-		// this timer will redirect to a ranom page 5 seconds after the user clicks something
-		if(!redirect_timer && !never_come_from[name]) {
+	// this timer resets to the first page if there's no activity for a minute
+	clearTimeout(reset_timer);
+	// this timer takes you to a random page if there's no activity in 3 seconds
+	clearTimeout(redirect_timer);
+	if (!never_come_from[name]) {
+		var statement = 'show_page("init", "' + prev + '", false)';
+		reset_timer = setTimeout(statement, RESET_DURATION);
+
+		if (!from_redirect) {
 			var random_page;
 			var keys = goog.object.getKeys(rules);
 			while (!random_page || never_go_to[random_page]) {
