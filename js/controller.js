@@ -50,6 +50,8 @@ show_page = function(name, prev, from_redirect) {
 	// special behavior for init page click: it always takes you somewhere random
 	if (prev == 'init') {
 		new_rules = rules[random_page()];
+		// FIXME: we don't really need prev as long as there's no back button. 
+		prev = 'xxxxxxxx';
 	} 
 	// whoops! accidental INTERCAL reference
 	if (!never_come_from[name]) {
