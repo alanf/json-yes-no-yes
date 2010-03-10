@@ -1,6 +1,8 @@
 // hacked out in no time flat by alan fineberg 
 // c 2010
 // www.alanfineberg.com
+// I know this isn't camel cased. I'm sorry!
+
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
 
@@ -25,6 +27,15 @@ var AUTO_REDIRECT_DURATION = 3000; //ms
 var reset_timer = null;
 var RESET_DURATION = 60000; //ms
 
+random_page = function() {
+	var rand_page;
+	var keys = goog.object.getKeys(rules);
+	while (!rand_page || never_go_to[rand_page]) {
+		rand_page = keys[Math.floor(Math.random()*keys.length)]
+	};
+	return rand_page;
+}
+
 show_page = function(name, prev, from_redirect) {
 	var new_rules = rules[name];
 	if (!new_rules) {
@@ -34,17 +45,18 @@ show_page = function(name, prev, from_redirect) {
 	clearTimeout(reset_timer);
 	// this timer takes you to a random page if there's no activity in 3 seconds
 	clearTimeout(redirect_timer);
+	// special behavior for init page click: it always takes you somewhere random
+	if (prev == 'init') {
+		new_rules = rules[random_page()];
+	} 
+	// whoops! accidental INTERCAL reference
 	if (!never_come_from[name]) {
 		var statement = 'show_page("init", "' + prev + '", false)';
 		reset_timer = setTimeout(statement, RESET_DURATION);
 
 		if (!from_redirect) {
-			var random_page;
-			var keys = goog.object.getKeys(rules);
-			while (!random_page || never_go_to[random_page]) {
-				random_page = keys[Math.floor(Math.random()*keys.length)]
-			};
-			statement = 'show_page("' + random_page + '", "' + prev + '", true)';
+			var rand_page = random_page();
+			statement = 'show_page("' + rand_page + '", "' + prev + '", true)';
 			redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
 		}
 	}
