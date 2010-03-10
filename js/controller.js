@@ -25,7 +25,7 @@ main_action = function(event) {
 
 // rules for automatically redirecting to a random page
 var redirect_timer = null;
-var AUTO_REDIRECT_DURATION = 3000; //ms
+var AUTO_REDIRECT_DURATION = 2000; //ms
 var reset_timer = null;
 var RESET_DURATION = 60000; //ms
 

@@ -4,7 +4,7 @@ a {color:#4F4F4F;text-decoration:none;}
 p {position: absolute;}
 img {position: absolute;cursor: pointer;}
 object {padding: none;}
-#start, #image-init-start-0 {width: 250px; margin-left: auto; margin-right: auto;margin-top:130px;position:relative;display:block;}
+#start, #image-init-start-0 {width: 250px; margin-left: auto; margin-right: auto;margin-top:250px;position:relative;display:block;}
 #home{bottom: 5%; left: 92%; position: absolute;}
 #debug-input{bottom: 5%; right: 180px; position: absolute;}
 .has-next {cursor:pointer;}
