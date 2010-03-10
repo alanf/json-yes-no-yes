@@ -3454,11 +3454,9 @@ never_come_from = {
 	'entropy': true,
 	'2_1': true,
 	'wall': true,
-	'start': true,
 	'init': true
 }
 
 never_go_to = {
-	'start': true,
 	'init': true
 }
