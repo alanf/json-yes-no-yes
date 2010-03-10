@@ -5,6 +5,8 @@
 
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
+var DEBUG_BOX = false;
+var BACK_BUTTON = false;
 
 get_rules_from_id = function(id) {
 	var prev = id.split('-')[1];
@@ -142,14 +144,23 @@ show_page = function(name, prev, from_redirect) {
 
 	// These links are always present on the page
 	var debug_back_img = goog.dom.createDom('img', {'src': 'images/back.jpg', 'id': 'debug-'+prev+'-'+prev});
-	var start_img = goog.dom.createDom('img', {'src': 'images/home.jpg', 'id': 'home-start-start'});
-	goog.array.forEach([debug_back_img, start_img], function (link) {
-		$('main-body').appendChild(link);	
-		goog.events.listen(link, goog.events.EventType.CLICK, main_action, false, this);
-	});
-	var debug_input = goog.dom.createDom('input', {'type': 'text', 'id': 'debug-input'});
-	$('main-body').appendChild(debug_input);	
-	goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
+	var start_img = goog.dom.createDom('img', {'src': 'images/home.jpg', 'id': 'home'});
+	var links = [start_img];
+	if (BACK_BUTTON) {
+		links.push(debug_back_img);
+		$('main-body').appendChild(debug_back_img);	
+		goog.events.listen(debug_back_img, goog.events.EventType.CLICK, main_action, false, this);
+	}
+
+	
+	$('main-body').appendChild(start_img);	
+	goog.events.listen(start_img, goog.events.EventType.CLICK, function() { return show_page('init', 'start');}, false, this);
+
+	if (DEBUG_BOX) {
+		var debug_input = goog.dom.createDom('input', {'type': 'text', 'id': 'debug-input'});
+		$('main-body').appendChild(debug_input);	
+		goog.events.listen(debug_input, goog.events.EventType.KEYUP, alter_debug_jump_link, false, this);
+	}	
 };
 
 alter_debug_jump_link = function(event) {
