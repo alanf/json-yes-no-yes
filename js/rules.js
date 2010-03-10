@@ -3,7 +3,8 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'start',
-                'content': 'start.jpg'
+                'content': 'start.jpg',
+                'position': {'x': '42%', 'y': '39%'}
                 }
 			],
     'start': [
