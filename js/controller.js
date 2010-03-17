@@ -5,8 +5,8 @@
 
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
-var DEBUG_BOX = false;
-var BACK_BUTTON = false;
+var DEBUG_BOX = true;
+var BACK_BUTTON = true;
 
 get_rules_from_id = function(id) {
 	var prev = id.split('-')[1];
@@ -25,9 +25,9 @@ main_action = function(event) {
 
 // rules for automatically redirecting to a random page
 var redirect_timer = null;
-var AUTO_REDIRECT_DURATION = 2000; //ms
+var AUTO_REDIRECT_DURATION = 600000; //ms
 var reset_timer = null;
-var RESET_DURATION = 60000; //ms
+var RESET_DURATION = 600000; //ms
 
 random_page = function() {
 	var rand_page;

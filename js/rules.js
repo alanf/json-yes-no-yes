@@ -205,7 +205,7 @@ rules = {
 	'proximity': [
                 {
                 'type': 'image',
-                'next': 'landsandsky',
+                'next': 'puddle_tape',
                 'content': 'proximity.jpg',
                 'position': {'x': '15%', 'y': '8%'}
                 }
@@ -285,7 +285,7 @@ rules = {
 	'bag': [
                 {
                 'type': 'image',
-                'next': 'soles_fulcrum',
+                'next': 'plastic',
                 'content': 'bag.jpg',
                 'position': {'x': '20%', 'y': '12%'}
                 }
@@ -323,7 +323,7 @@ rules = {
 	'soles_fulcrum': [
 				{
                 'type': 'image',
-                'next': 'twoways',
+                'next': 'intelligence',
                 'content': 'soles.jpg',
                 'position': {'x': '500px', 'y': '175px'}
                 },
@@ -413,7 +413,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'emergency',
+                'next': 'history',
                 'content': 'sky.jpg',
                 'position': {'x': '60%', 'y': '35%'}
                 }
@@ -462,13 +462,19 @@ rules = {
                 'type': 'image',
                 'next': '2_1',
                 'content': 'toe.jpg',
-                'position': {'x': '15%', 'y': '8%'}
+                'position': {'x': '10%', 'y': '8%'}
+                },
+				{
+                'type': 'image',
+                'next': 'ground5',
+                'content': 'plants.jpg',
+                'position': {'x': '55%', 'y': '30%'}
                 }
 	],		
 			'twoways': [
                 {
                 'type': 'image',
-                'next': 'fifth_parking',
+                'next': 'clothes_branches',
                 'content': '2ways-1.jpg',
                 'position': {'x': '200px', 'y': '8%'}
                 },
@@ -779,7 +785,7 @@ rules = {
                 'type': 'image',
                 'next': 'breathingdeeply',
                 'content': 'portland_slice_print.jpg',
-                'position': {'x': '10%', 'y': '10%'}
+                'position': {'x': '20%', 'y': '10%'}
                 }
 	],
 				'bodies5': [
@@ -833,7 +839,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'antenna',
+                'next': 'lattice',
                 'content': 'reliance.jpg',
                 'position': {'x': '625px', 'y': '425px'}
                 }
@@ -877,7 +883,7 @@ rules = {
 				'twotrees': [
                  {
                 'type': 'text',
-                'content': '[[tree1|0110]]1100011010010110101101100101001000000111010001110111010111100100000011101000111001001100101011001010111001100100000011000100110010101100011011011110110110101101001011011100110011100100000110111101101110011[[tree2|01001]]',
+                'content': '[[tree1|0110]]110001101001011[[lights|010110]]1100101001000000111010001110111010111100100000011101000111001001100101011001010111001100100000011000100110010101100011011011110110110101101001011011100110011100100000110111101101110011[[tree2|01001]]',
 				'width': '100px',
                 'position': {'x': '170px', 'y': '270px'}
                 }
@@ -902,6 +908,12 @@ rules = {
                 'next': 'vent',
                 'content': 'tree1.jpg',
                 'position': {'x': '40%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'puddle_tape',
+                'content': 'sidewalk.jpg',
+                'position': {'x': '10%', 'y': '50%'}
                 }
 	],
 				'tree2': [
@@ -917,7 +929,13 @@ rules = {
                 'type': 'image',
                 'next': 'thelongest',
                 'content': 'cushion.jpg',
-                'position': {'x': '5%', 'y': '12%'}
+                'position': {'x': '10%', 'y': '100px'}
+                },
+				{
+                'type': 'image',
+                'next': 'colordots',
+                'content': 'manhole.jpg',
+                'position': {'x': '65%', 'y': '240px'}
                 }
 	],
 				
@@ -971,7 +989,7 @@ rules = {
 				'circles': [
 				{
                 'type': 'image',
-                'next': 'chad2',
+                'next': 'history',
                 'content': 'circle_1.jpg',
                 'position': {'x': '300px', 'y': '30%'}
                 },
@@ -984,11 +1002,11 @@ rules = {
     ],
 				
 				'invisible': [
-                {
+				{
                 'type': 'image',
                 'next': 'sand',
                 'content': 'invisible.jpg',
-                'position': {'x': '45%', 'y': '45%'}
+                'position': {'x': '25%', 'y': '35%'}
                 }
 	],
 				'wall': [
@@ -1012,7 +1030,7 @@ rules = {
                 'type': 'image',
                 'next': 'x',
                 'content': 'vent.jpg',
-                'position': {'x': '30%', 'y': '10%'}
+                'position': {'x': '40%', 'y': '10%'}
                 }
 	],
 				
@@ -1077,7 +1095,7 @@ rules = {
 				'toilet': [
                 {
                 'type': 'image',
-                'next': 'groundd',
+                'next': 'dogs_dance',
                 'content': 'toilet.jpg',
                 'position': {'x': '20%', 'y': '15%'}
                 }	
@@ -2763,12 +2781,18 @@ rules = {
                 'next': 'destination',
                 'content': 'page8_img2.jpg',
                 'position': {'x': '5%', 'y': '12%'}
+                },
+				{
+                'type': 'image',
+                'next': 'colordots',
+                'content': 'intrusion.jpg',
+                'position': {'x': '45%', 'y': '32%'}
                 }
 	],
 		'soles': [
                 {
                 'type': 'image',
-                'next': 'twoways',
+                'next': 'relation',
                 'content': 'soles.jpg',
                 'position': {'x': '5%', 'y': '35%'}
                 },
@@ -2784,7 +2808,7 @@ rules = {
                 'type': 'image',
                 'next': 'skysandland',
                 'content': 'sand.jpg',
-                'position': {'x': '35%', 'y': '35%'}
+                'position': {'x': '37%', 'y': '35%'}
                 }
 	],
 		'cushion2': [
@@ -2839,7 +2863,7 @@ rules = {
 		'brain2': [
                 {
                 'type': 'image',
-                'next': 'brain',
+                'next': 'spine',
 				'width': '100%',
                 'content': 'brain2.jpg',
                 'position': {'x': '0%', 'y': '0%'}
@@ -2854,7 +2878,7 @@ rules = {
                 },
 				{
                 'type': 'image',
-                'next': 'knitting',
+                'next': 'lattice',
                 'content': 'gestalt2.jpg',
                 'position': {'x': '30%', 'y': '55%'}
                 },
@@ -2886,7 +2910,13 @@ rules = {
                 'type': 'text',
                 'content': '[[latitude|42.270783]], [[longitude|-85.629866]]',
 				'width': '600px',
-                'position': {'x': '150px', 'y': '390px'}
+                'position': {'x': '50px', 'y': '490px'}
+                },
+				{
+                'type': 'image',
+                'next': 'tree2',
+                'content': 'plane.jpg',
+                'position': {'x': '40%', 'y': '25px'}
                 }
 	],
 		'latitude': [
@@ -2920,7 +2950,7 @@ rules = {
 		'chad': [
                 {
                 'type': 'image',
-                'next': 'over_humps',
+                'next': 'hands',
                 'content': 'ch.jpg',
                 'position': {'x': '20%', 'y': '25%'}
                 }
@@ -3021,7 +3051,7 @@ rules = {
 		'satin_sweater': [
                 {
                 'type': 'image',
-                'next': 'hair',
+                'next': 'indivisible',
                 'content': 'sweater2.jpg',
                 'position': {'x': '10%', 'y': '25%'}
                 },
@@ -3030,14 +3060,6 @@ rules = {
                 'next': 'cushion2',
                 'content': 'satin2.jpg',
                 'position': {'x': '50%', 'y': '25%'}
-                }
-	],
-		'chad2': [
-                {
-                'type': 'image',
-                'next': '24nights',
-                'content': 'ch.jpg',
-                'position': {'x': '5%', 'y': '15%'}
                 }
 	],
 		'emergency': [
@@ -3251,13 +3273,13 @@ rules = {
                 'type': 'image',
                 'next': 'chad',
                 'content': 'x2.jpg',
-                'position': {'x': '45%', 'y': '48%'}
+                'position': {'x': '50%', 'y': '48%'}
                 },
 				{
                 'type': 'image',
                 'next': 'knitting',
                 'content': 'rat.jpg',
-                'position': {'x': '5%', 'y': '10%'}
+                'position': {'x': '10%', 'y': '10%'}
                 }
 	],
 		'brighter': [
@@ -3351,13 +3373,13 @@ rules = {
                 'type': 'image',
                 'next': 'antenna',
                 'content': 'window2.jpg',
-                'position': {'x': '45%', 'y': '5%'}
+                'position': {'x': '55%', 'y': '5%'}
                 }
 	],
 		'oils': [
                 {
                 'type': 'image',
-                'next': 'entropy',
+                'next': 'drawers',
                 'content': 'oil.jpg',
                 'position': {'x': '10%', 'y': '10%'}
                 },
@@ -3365,7 +3387,7 @@ rules = {
                 'type': 'image',
                 'next': 'entropy',
                 'content': 'cabbage.jpg',
-                'position': {'x': '60%', 'y': '37%'}
+                'position': {'x': '55%', 'y': '37%'}
                 }
 	],
 		'yolk4': [
@@ -3384,26 +3406,6 @@ rules = {
                 'position': {'x': '15%', 'y': '28%'}
                 }
 	],
-		'rocks_garlic_bd': [
-                {
-                'type': 'image',
-                'next': 'tree1',
-                'content': 'rocks.jpg',
-                'position': {'x': '15%', 'y': '28%'}
-                },
-				{
-                'type': 'image',
-                'next': 'destination',
-                'content': 'garlic.jpg',
-                'position': {'x': '46%', 'y': '0%'}
-                },
-				{
-                'type': 'image',
-                'next': 'garage_arm',
-                'content': 'bd.jpg',
-                'position': {'x': '65%', 'y': '48%'}
-                }
-	],
 		'entropy': [
                 {
 				'type': 'video',
@@ -3415,7 +3417,7 @@ rules = {
 				},
 				{
                 'type': 'image',
-                'next': 'rocks_garlic_bd',
+                'next': 'frame',
                 'content': 'incense3.jpg',
                 'position': {'x': '55%', 'y': '48%'}
                 }
@@ -3425,7 +3427,7 @@ rules = {
                 'type': 'image',
                 'next': 'tree1',
                 'content': 'rocks.jpg',
-                'position': {'x': '45%', 'y': '25%'}
+                'position': {'x': '55%', 'y': '25%'}
                 },
 				{
                 'type': 'image',
@@ -3441,6 +3443,241 @@ rules = {
 				'width': '100%',
                 'content': 'reliance2.jpg',
                 'position': {'x': '0%', 'y': '0%'}
+                }
+	],
+		'history': [
+                {
+                'type': 'image',
+                'next': 'wall',
+                'content': 'touching1.jpg',
+                'position': {'x': '20%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'wind',
+                'content': 'touching2.jpg',
+                'position': {'x': '40%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'misc',
+                'content': 'touching3.jpg',
+                'position': {'x': '60%', 'y': '10%'}
+                },
+				{
+                'type': 'image',
+                'next': 'push_web',
+                'content': 'touching4.jpg',
+                'position': {'x': '20%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'pressurepleasure',
+                'content': 'touching5.jpg',
+                'position': {'x': '40%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'circles',
+                'content': 'touching6.jpg',
+                'position': {'x': '60%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'hairdown',
+                'content': 'touching7.jpg',
+                'position': {'x': '20%', 'y': '60%'}
+                },
+				{
+                'type': 'image',
+                'next': '2_1',
+                'content': 'touching8.jpg',
+                'position': {'x': '40%', 'y': '60%'}
+                },
+				{
+                'type': 'image',
+                'next': 'portland_slice',
+                'content': 'touching9.jpg',
+                'position': {'x': '60%', 'y': '60%'}
+                },
+				{
+                'type': 'text',
+                'next': 'history',
+                'content': 'Touching History, 4 Billion Years Ago to Present',
+				'color': 'black',
+                'position': {'x': '30%', 'y': '80%'}
+                }	
+	],
+		'plastic': [
+                {
+                'type': 'image',
+                'next': 'window',
+                'content': 'plastic1.jpg',
+                'position': {'x': '10%', 'y': '30%'}
+                },
+				{
+                'type': 'image',
+                'next': 'satin_sweater',
+                'content': 'plastic2.jpg',
+                'position': {'x': '50%', 'y': '30%'}
+                }
+	],
+		'lights': [
+                {
+                'type': 'image',
+                'next': 'everythingiseverything',
+                'content': 'lightfixture.jpg',
+                'position': {'x': '15%', 'y': '15%'}
+                },
+				{
+                'type': 'image',
+                'next': 'intobed',
+                'content': 'lightbulb.jpg',
+                'position': {'x': '35%', 'y': '65%'}
+                },
+				{
+                'type': 'image',
+                'next': 'devotion3',
+                'content': 'nothing.jpg',
+                'position': {'x': '60%', 'y': '18%'}
+                }
+	],
+		'lattice': [
+                {
+                'type': 'image',
+                'next': 'circles',
+                'content': 'lattice.jpg',
+                'position': {'x': '10%', 'y': '0%'}
+                }
+	],
+		'puddle_tape': [
+                {
+                'type': 'image',
+                'next': 'window',
+                'content': 'puddle.jpg',
+                'position': {'x': '5%', 'y': '5%'}
+                },
+				{
+                'type': 'image',
+                'next': 'oils',
+                'content': 'tape.jpg',
+                'position': {'x': '55%', 'y': '50%'}
+                }
+	],
+		'intelligence': [
+                 {
+                'type': 'text',
+                'content': '[[tree1|when an image changes the observer must know whether the change is due to the object itself or to the context or to both - otherwise he understands neither the object nor its surroundings. intertwined though the two appear, one can attempt to tease them apart, especially by watching the same object in different contexts and the same context acting on different objects.]]',
+				'width': '540px',
+                'position': {'x': '350px', 'y': '150px'}
+                }
+	],
+		'clothes_branches': [
+                {
+                'type': 'image',
+                'next': 'toe',
+                'content': 'clothes.jpg',
+                'position': {'x': '5%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'devotion_1',
+                'content': 'branches.jpg',
+                'position': {'x': '55%', 'y': '20%'}
+                }
+	],
+		'spine': [
+                 {
+                'type': 'text',
+                'content': '[[icecream|spine uncurling against wall]]',
+				'width': '200px',
+                'position': {'x': '170px', 'y': '270px'}
+                }
+	],
+		'dogs_dance': [
+                {
+                'type': 'image',
+                'next': 'universe',
+                'content': 'dogs.jpg',
+                'position': {'x': '5%', 'y': '35%'}
+                },
+				{
+                'type': 'image',
+                'next': 'yes',
+                'content': 'dance.jpg',
+                'position': {'x': '65%', 'y': '20%'}
+                }
+	],
+		'relation': [
+                {
+                'type': 'text',
+                'content': '[[OH_wall_arm_web|more generally, to]] see things [[pachelbel|in relation]]',
+				'width': '600px',
+                'position': {'x': '170px', 'y': '270px'}
+                }
+	],
+		'pachelbel': [
+				{
+				'type': 'video',
+				'next': 'intelligence',
+				'content': 'pachelbel.mov',
+				'width': '300',
+				'height': '200',
+                'position': {'x': '15%', 'y': '35%'}
+				},
+				{
+				'type': 'video',
+				'next': 'focus',
+				'content': 'pachelbel.mov',
+				'width': '300',
+				'height': '200',
+                'position': {'x': '55%', 'y': '35%'}
+				}
+	],
+		'focus': [
+                {
+                'type': 'image',
+                'next': 'circles',
+                'content': 'focus.jpg',
+                'position': {'x': '15%', 'y': '10%'}
+                }
+	],
+		'frame': [
+                {
+                'type': 'image',
+                'next': 'start',
+                'content': 'frame.jpg',
+                'position': {'x': '15%', 'y': '10%'}
+                }
+	],
+		'hands': [
+   				{
+                'type': 'image',
+                'next': 'comparisons',
+                'content': 'hands.jpg',
+                'position': {'x': '15%', 'y': '40%'}
+                },
+				{
+                'type': 'image',
+                'next': 'comparisons',
+                'content': 'heartplant.jpg',
+                'position': {'x': '50%', 'y': '15%'}
+                }
+	],
+		'comparisons': [
+                {
+                'type': 'text',
+                'content': '[[OH_wall_arm_web|a series of comparisons]]',
+				'width': '600px',
+                'position': {'x': '520px', 'y': '120px'}
+                }
+	],
+		'indivisible': [
+                {
+                'type': 'text',
+                'content': '[[plastic|indi]][[oils|visible]]',
+				'width': '600px',
+                'position': {'x': '25%', 'y': '30%'}
                 }
 	],
 		
