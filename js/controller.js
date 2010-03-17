@@ -44,6 +44,9 @@ show_page = function(name, prev, from_redirect) {
 	if (!new_rules) {
 		return;
 	};
+	// google event tracking
+	pageTracker._trackEvent('user_action', 'view', name, Number(from_redirect));
+
 	// this timer resets to the first page if there's no activity for a minute
 	clearTimeout(reset_timer);
 	// this timer takes you to a random page if there's no activity in 3 seconds
