@@ -1052,7 +1052,7 @@ rules = {
                 'type': 'image',
                 'next': 'hairdown',
                 'content': 'arm.jpg',
-                'position': {'x': '50%', 'y': '20%'}
+                'position': {'x': '48%', 'y': '20%'}
                 },
 				{
                 'type': 'image',
@@ -1064,7 +1064,7 @@ rules = {
                 'type': 'image',
                 'next': 'tree1',
                 'content': 'garage.jpg',
-                'position': {'x': '25%', 'y': '17%'}
+                'position': {'x': '12%', 'y': '20%'}
                 }	
 	],					
 				'terms1': [
