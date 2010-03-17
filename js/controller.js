@@ -5,7 +5,7 @@
 
 var $ = goog.dom.$;
 var $$ = goog.dom.$$;
-var SHOW_DEBUG_BOX = true;
+var SHOW_DEBUG_BOX = false;
 var SHOW_BACK_BUTTON = false;
 var SHOW_HOME_BUTTON = false;
 
