@@ -26,6 +26,7 @@ main_action = function(event) {
 
 // rules for automatically redirecting to a random page
 var redirect_timer = null;
+var ENABLE_AUTOREDIRECT = true;
 var AUTO_REDIRECT_DURATION = 600000; //ms
 var reset_timer = null;
 var RESET_DURATION = 600000; //ms
@@ -62,7 +63,7 @@ show_page = function(name, prev, from_redirect) {
 		var statement = 'show_page("init", "' + prev + '", false)';
 		reset_timer = setTimeout(statement, RESET_DURATION);
 
-		if (!from_redirect) {
+		if (ENABLE_AUTOREDIRECT && !from_redirect) {
 			var rand_page = random_page();
 			statement = 'show_page("' + rand_page + '", "' + prev + '", true)';
 			redirect_timer = setTimeout(statement, AUTO_REDIRECT_DURATION);
