@@ -26,10 +26,10 @@ main_action = function(event) {
 
 // rules for automatically redirecting to a random page
 var redirect_timer = null;
-var ENABLE_AUTOREDIRECT = true;
+var ENABLE_AUTOREDIRECT = false;
 var AUTO_REDIRECT_DURATION = 600000; //ms
 var reset_timer = null;
-var RESET_DURATION = 600000; //ms
+var RESET_DURATION = 60000; //ms
 
 random_page = function() {
 	var rand_page;

@@ -3738,10 +3738,6 @@ rules = {
 
 
 never_come_from = {
-	'entropy': false,
-	'2_1': false,
-	'wall': false,
-	'init': false
 }
 
 never_go_to = {
