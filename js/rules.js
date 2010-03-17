@@ -3,7 +3,7 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'start',
-                'content': 'start.jpg',
+                'content': 'start.jpg'
                 }
 			],
     'start': [
@@ -3646,7 +3646,7 @@ rules = {
                 }
 	],
 		'hands': [
-   				{
+				{
                 'type': 'image',
                 'next': 'comparisons',
                 'content': 'hands.jpg',
@@ -3730,7 +3730,7 @@ rules = {
                 'content': 'dot.jpg',
                 'position': {'x': '60%', 'y': '70%'}
                 }
-    ],
+    ]
 		
 }
 
@@ -3738,8 +3738,8 @@ rules = {
 
 
 never_come_from = {
-}
+};
 
 never_go_to = {
 	'init': true
-}
+};
