@@ -2953,6 +2953,7 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'nothing2',
+				'width': '100%',
                 'content': 'nothing1.jpg',
                 'position': {'x': '0%', 'y': '0%'}
                 }
@@ -2961,6 +2962,7 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'nothing3',
+				'width': '100%',
                 'content': 'nothing2.jpg',
                 'position': {'x': '0%', 'y': '0%'}
                 }
@@ -2969,6 +2971,7 @@ rules = {
                 {
                 'type': 'image',
                 'next': 'nothing4',
+				'width': '100%',
                 'content': 'nothing3.jpg',
                 'position': {'x': '0%', 'y': '0%'}
                 }
@@ -2978,6 +2981,7 @@ rules = {
                 'type': 'image',
                 'next': 'nothingsomething',
                 'content': 'nothing4.jpg',
+				'width': '100%',
                 'position': {'x': '0%', 'y': '0%'}
                 }
 	],
